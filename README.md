@@ -1,4 +1,4 @@
-<h1 style="text-align: center"> Baihe Medical - Página Web 🏥</h1>
+<h1 align="center"> Baihe Medical - Página Web 🏥</h1>
 
 Este proyecto es la página web de **Baihe Medical**, una empresa dedicada a la venta de productos médicos desechables. Está desarrollada con **React**, **TypeScript**, **Vite** y **Tailwind CSS**.
 
