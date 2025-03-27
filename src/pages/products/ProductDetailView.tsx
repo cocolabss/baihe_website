@@ -1,4 +1,3 @@
-// ProductDetailView.tsx
 import React from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
 
@@ -71,14 +70,20 @@ const ProductDetailView: React.FC = () => {
                     <div className="space-y-6">
                         <div className="space-y-2">
                             <h1 className="text-3xl font-medium text-red">{product.name}</h1>
-                            <div className="prose max-w-none text-darkgray text-justify">
-                                {product.description?.split('\n').map((line, i) => (
-                                    <React.Fragment key={i}>
-                                        {line}
-                                        {i < product.description!.split('\n').length - 1 && <br />}
-                                    </React.Fragment>
-                                )) || "Descripción detallada del producto..."}
-                            </div>
+                            {product.description ? (
+                                <div className="prose max-w-none text-darkgray text-justify">
+                                    {product.description.split('\n').map((line, i) => (
+                                        <React.Fragment key={i}>
+                                            {line}
+                                            {i < product.description!.split('\n').length - 1 && <br />}
+                                        </React.Fragment>
+                                    ))}
+                                </div>
+                            ) : (
+                                <div className="prose max-w-none text-darkgray text-justify pb-32">
+                                    <span className="italic">No hay información disponible sobre este producto</span>
+                                </div>
+                            )}
                         </div>
 
                         {product.specifications && (
@@ -94,30 +99,36 @@ const ProductDetailView: React.FC = () => {
                     </div>
 
                     <div className="space-y-6">
-                        <div className="shadow-[-5px_5px_5px_0px_rgba(0,0,0,0.2)] overflow-hidden">
-                            <img
-                                src={product.image}
-                                alt={product.name}
-                                className="w-full h-auto object-cover"
-                            />
-                        </div>
+                        {product.image && (
+                            <div className="shadow-[-5px_5px_5px_0px_rgba(0,0,0,0.2)] overflow-hidden">
+                                <img
+                                    src={product.image}
+                                    alt={product.name}
+                                    className="w-full h-auto object-cover"
+                                />
+                            </div>
+                        )}
 
-                        <div className="grid grid-cols-2 gap-4">
-                            {product.detailImages?.map((detail, index) => (
-                                <div key={index} className="border rounded-lg overflow-hidden">
-                                    <img
-                                        src={detail.image}
-                                        alt={`Detalle ${index + 1}`}
-                                        className="w-full h-32 object-cover"
-                                    />
-                                    {detail.subtitle && (
-                                        <p className="text-right text-sm text-darkgray p-2">
-                                            {detail.subtitle}
-                                        </p>
-                                    )}
-                                </div>
-                            ))}
-                        </div>
+                        {product.detailImages && product.detailImages.length > 0 && (
+                            <div className="grid grid-cols-2 gap-4">
+                                {product.detailImages.map((detail, index) => (
+                                    detail.image && (
+                                        <div key={index} className="border rounded-lg overflow-hidden">
+                                            <img
+                                                src={detail.image}
+                                                alt={`Detalle ${index + 1}`}
+                                                className="w-full h-32 object-cover"
+                                            />
+                                            {detail.subtitle && (
+                                                <p className="text-right text-sm text-darkgray p-2">
+                                                    {detail.subtitle}
+                                                </p>
+                                            )}
+                                        </div>
+                                    )
+                                ))}
+                            </div>
+                        )}
                     </div>
                 </div>
             </section>
