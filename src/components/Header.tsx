@@ -38,7 +38,7 @@ const Header = () => {
                         </li>
                         <li>
                             <a
-                                href="/contact"
+                                href="#contact"
                                 className={`hover:text-red ${location.pathname === '/contact' ? 'text-red' : ''}`}
                             >
                                 CONTACTO
