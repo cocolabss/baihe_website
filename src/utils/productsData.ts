@@ -1,12 +1,122 @@
-import anestesiaImage from '../assets/images/products/anestesia.png';
-import purificacionImage from '../assets/images/products/purificacion_sangre.png';
-import infusionImage from '../assets/images/products/infusion_intravenosa.png';
-import cuidadoImage from '../assets/images/products/cuidado_heridas.png';
-import urologiaImage from '../assets/images/products/urologia.png';
-import alambreImage from '../assets/images/products/alambre_guia.png';
-
 // Anestesia
-import cateterVenosoCentralImage from '../assets/images/products/anestesia/cateterVenosoCentral.png';
+import anestesiaImage from '../assets/images/products/anestesia.jpg';
+import anestesiaImage1 from '../assets/images/products/anestesia/anestesia_1.jpg';
+import anestesiaImage2 from '../assets/images/products/anestesia/anestesia_2.jpg';
+import anestesiaImage3 from '../assets/images/products/anestesia/anestesia_3.jpg';
+import anestesiaImage4 from '../assets/images/products/anestesia/anestesia_4.jpg';
+import anestesiaImage5 from '../assets/images/products/anestesia/anestesia_5.jpg';
+import anestesiaImage6 from '../assets/images/products/anestesia/anestesia_6.jpg';
+import anestesiaImage7 from '../assets/images/products/anestesia/anestesia_7.jpg';
+import anestesiaImage8 from '../assets/images/products/anestesia/anestesia_8.jpg';
+import anestesiaImage9 from '../assets/images/products/anestesia/anestesia_9.jpg';
+import anestesiaImage10 from '../assets/images/products/anestesia/anestesia_10.jpg';
+import anestesiaImage11 from '../assets/images/products/anestesia/anestesia_11.jpg';
+import anestesiaImage12 from '../assets/images/products/anestesia/anestesia_12.jpg';
+import anestesiaImage13 from '../assets/images/products/anestesia/anestesia_13.jpg';
+import anestesiaImage14 from '../assets/images/products/anestesia/anestesia_14.jpg';
+import anestesiaImage15 from '../assets/images/products/anestesia/anestesia_15.jpg';
+import anestesiaImage16 from '../assets/images/products/anestesia/anestesia_16.jpg';
+import anestesiaImage17 from '../assets/images/products/anestesia/anestesia_17.jpg';
+import anestesiaImage18 from '../assets/images/products/anestesia/anestesia_18.jpg';
+import anestesiaImage19 from '../assets/images/products/anestesia/anestesia_19.jpg';
+
+// Purificación de Sangre
+import purificacionImage from '../assets/images/products/purificacion_sangre.png';
+import purificacionImage1 from '../assets/images/products/purificacion_sangre/purificacion_sangre_1.jpg';
+import purificacionImage2 from '../assets/images/products/purificacion_sangre/purificacion_sangre_2.jpg';
+import purificacionImage3 from '../assets/images/products/purificacion_sangre/purificacion_sangre_3.jpg';
+import purificacionImage4 from '../assets/images/products/purificacion_sangre/purificacion_sangre_4.jpg';
+import purificacionImage5 from '../assets/images/products/purificacion_sangre/purificacion_sangre_5.jpg';
+import purificacionImage6 from '../assets/images/products/purificacion_sangre/purificacion_sangre_6.jpg';
+import purificacionImage7 from '../assets/images/products/purificacion_sangre/purificacion_sangre_7.jpg';
+import purificacionImage8 from '../assets/images/products/purificacion_sangre/purificacion_sangre_8.jpg';
+import purificacionImage9 from '../assets/images/products/purificacion_sangre/purificacion_sangre_9.jpg';
+import purificacionImage10 from '../assets/images/products/purificacion_sangre/purificacion_sangre_10.jpg';
+import purificacionImage11 from '../assets/images/products/purificacion_sangre/purificacion_sangre_11.png';
+import purificacionImage12 from '../assets/images/products/purificacion_sangre/purificacion_sangre_12.png';
+import purificacionImage13 from '../assets/images/products/purificacion_sangre/purificacion_sangre_13.jpg';
+import purificacionImage14 from '../assets/images/products/purificacion_sangre/purificacion_sangre_14.png';
+import purificacionImage15 from '../assets/images/products/purificacion_sangre/purificacion_sangre_15.png';
+import purificacionImage16 from '../assets/images/products/purificacion_sangre/purificacion_sangre_16.png';
+import purificacionImage17 from '../assets/images/products/purificacion_sangre/purificacion_sangre_17.png';
+import purificacionImage18 from '../assets/images/products/purificacion_sangre/purificacion_sangre_18.png';
+import purificacionImage19 from '../assets/images/products/purificacion_sangre/purificacion_sangre_19.jpg';
+import purificacionImage20 from '../assets/images/products/purificacion_sangre/purificacion_sangre_20.jpg';
+import purificacionImage21 from '../assets/images/products/purificacion_sangre/purificacion_sangre_21.jpg';
+
+// Infusión
+import infusionImage from '../assets/images/products/infusion_intravenosa.png';
+import infusionImage1 from '../assets/images/products/infusion/infusion_1.jpg';
+import infusionImage2 from '../assets/images/products/infusion/infusion_2.jpg';
+import infusionImage3 from '../assets/images/products/infusion/infusion_3.jpg';
+import infusionImage4 from '../assets/images/products/infusion/infusion_4.jpg';
+import infusionImage5 from '../assets/images/products/infusion/infusion_5.jpg';
+import infusionImage6 from '../assets/images/products/infusion/infusion_6.jpg';
+import infusionImage7 from '../assets/images/products/infusion/infusion_7.jpg';
+import infusionImage8 from '../assets/images/products/infusion/infusion_8.png';
+import infusionImage9 from '../assets/images/products/infusion/infusion_9.png';
+import infusionImage10 from '../assets/images/products/infusion/infusion_10.png';
+import infusionImage11 from '../assets/images/products/infusion/infusion_11.png';
+import infusionImage12 from '../assets/images/products/infusion/infusion_12.jpg';
+import infusionImage13 from '../assets/images/products/infusion/infusion_13.jpg';
+import infusionImage14 from '../assets/images/products/infusion/infusion_14.jpg';
+import infusionImage15 from '../assets/images/products/infusion/infusion_15.jpg';
+import infusionImage16 from '../assets/images/products/infusion/infusion_16.jpg';
+import infusionImage17 from '../assets/images/products/infusion/infusion_17.jpg';
+import infusionImage18 from '../assets/images/products/infusion/infusion_18.jpg';
+import infusionImage19 from '../assets/images/products/infusion/infusion_19.jpg';
+import infusionImage20 from '../assets/images/products/infusion/infusion_20.jpg';
+import infusionImage21 from '../assets/images/products/infusion/infusion_21.jpg';
+import infusionImage22 from '../assets/images/products/infusion/infusion_22.jpg';
+import infusionImage23 from '../assets/images/products/infusion/infusion_23.jpg';
+import infusionImage24 from '../assets/images/products/infusion/infusion_24.png';
+import infusionImage25 from '../assets/images/products/infusion/infusion_25.jpg';
+import infusionImage26 from '../assets/images/products/infusion/infusion_26.png';
+import infusionImage27 from '../assets/images/products/infusion/infusion_27.png';
+
+// Cuidado de heridas
+import cuidadoImage from '../assets/images/products/cuidado_heridas.png';
+import cuidadoImage1 from '../assets/images/products/cuidado_heridas/cuidado_heridas_1.png';
+import cuidadoImage2 from '../assets/images/products/cuidado_heridas/cuidado_heridas_2.png';
+import cuidadoImage3 from '../assets/images/products/cuidado_heridas/cuidado_heridas_3.png';
+import cuidadoImage4 from '../assets/images/products/cuidado_heridas/cuidado_heridas_4.png';
+import cuidadoImage5 from '../assets/images/products/cuidado_heridas/cuidado_heridas_5.png';
+import cuidadoImage6 from '../assets/images/products/cuidado_heridas/cuidado_heridas_6.jpg';
+import cuidadoImage7 from '../assets/images/products/cuidado_heridas/cuidado_heridas_7.jpg';
+import cuidadoImage8 from '../assets/images/products/cuidado_heridas/cuidado_heridas_8.jpg';
+
+// Urologia
+import urologiaImage from '../assets/images/products/urologia.png';
+import urologiaImage1 from '../assets/images/products/urologia/urologia_1.png';
+import urologiaImage2 from '../assets/images/products/urologia/urologia_2.png';
+import urologiaImage3 from '../assets/images/products/urologia/urologia_3.png';
+import urologiaImage4 from '../assets/images/products/urologia/urologia_4.png';
+import urologiaImage5 from '../assets/images/products/urologia/urologia_5.png';
+import urologiaImage6 from '../assets/images/products/urologia/urologia_6.png';
+import urologiaImage7 from '../assets/images/products/urologia/urologia_7.png';
+import urologiaImage8 from '../assets/images/products/urologia/urologia_8.png';
+
+// Alambre de Guía y Accesorios
+import alambreImage from '../assets/images/products/alambre_guia.png';
+import accesoriosImage1 from '../assets/images/products/accesories/accesories_1.png';
+import accesoriosImage2 from '../assets/images/products/accesories/accesories_2.png';
+import accesoriosImage3 from '../assets/images/products/accesories/accesories_3.png';
+import accesoriosImage4 from '../assets/images/products/accesories/accesories_4.png';
+import accesoriosImage5 from '../assets/images/products/accesories/accesories_5.png';
+import accesoriosImage6 from '../assets/images/products/accesories/accesories_6.png';
+import accesoriosImage7 from '../assets/images/products/accesories/accesories_7.png';
+import accesoriosImage8 from '../assets/images/products/accesories/accesories_8.png';
+import accesoriosImage9 from '../assets/images/products/accesories/accesories_9.png';
+import accesoriosImage10 from '../assets/images/products/accesories/accesories_10.png';
+import accesoriosImage11 from '../assets/images/products/accesories/accesories_11.png';
+import accesoriosImage12 from '../assets/images/products/accesories/accesories_12.png';
+import accesoriosImage13 from '../assets/images/products/accesories/accesories_13.jpg';
+import accesoriosImage14 from '../assets/images/products/accesories/accesories_14.jpg';
+import accesoriosImage15 from '../assets/images/products/accesories/accesories_15.jpg';
+import accesoriosImage16 from '../assets/images/products/accesories/accesories_16.jpg';
+import accesoriosImage17 from '../assets/images/products/accesories/accesories_17.jpg';
+import accesoriosImage18 from '../assets/images/products/accesories/accesories_18.jpg';
+import accesoriosImage19 from '../assets/images/products/accesories/accesories_19.jpg';
 
 export interface ProductItem {
     id: number;
@@ -38,7 +148,7 @@ export const products: ProductCategory[] = [
             {
                 id: 101,
                 name: 'Catéter Venoso Central',
-                image: cateterVenosoCentralImage,
+                image: '',
                 description: 'La abrazadera móvil permite el anclaje en el sitio de punción independientemente de la profundidad del catéter, lo que minimiza el trauma y la irritación en el sitio de punción.El marcado de profundidad ayuda a la colocación precisa del catéter venoso central desde la vena subclavia o yugular derecha o izquierda. \n\nLa punta blanda reduce el trauma en el vaso, minimizando la erosión del vaso, el hemotórax y el taponamiento cardíaco.Lumen simple, doble, triple y cuádruple está disponible para su elección.',
                 specificationsTitle: 'Material del catéter TPU(Poliuretano de grado médico)',
                 specifications: [
@@ -52,18 +162,28 @@ export const products: ProductCategory[] = [
                     'Lumen del catéter espaciado regularmente para mantener la sangre desbloqueada fluyendo.',
                     'Radiopaco, facilita la visualización rápida bajo X-Ray.'
                 ],
-                detailImages: []
             },
             {
                 id: 102,
                 name: 'Catéter Venoso Central Antimicrobiano',
-                image: '',
-                description: 'La probabilidad de infección causada por el catéter venoso central ordinario es del 4,5%, el 80% de la infección es causada por bacterias en la superficie de la piel que ingresan a la sangre a través del sitio de punción del catéter. Las bacterias típicas son el estafilococo antitrombina, enterococo y cándida. El catéter venoso central antimicrobiano es eficaz para inhibir el crecimiento de bacterias, especialmente bacterias grampositivas, bacterias gramnegativas y hongos. La siguiente forma indica la tasa antibacteriana de bacterias típicas.\n\nEl tubo está hecho de poliuretano que se mezcla con circonio que contiene plata fosfato a nivel nanométrico, cuando el catéter se coloca en el cuerpo, Ag+ lo hará ser liberado para inhibir el crecimiento de bacterias.\n\nLa probabilidad de infección causada por el catéter venoso central ordinario es del 4,5%, 80% de la infección es causada por bacterias en la superficie de la piel que entran en la sangre a través del sitio de punción del catéter. Las bacterias típicas son el estafilococo antitrombina enterococos y cándida.'
+                image: anestesiaImage1,
+                description: 'La probabilidad de infección causada por el catéter venoso central ordinario es del 4,5%, el 80% de la infección es causada por bacterias en la superficie de la piel que ingresan a la sangre a través del sitio de punción del catéter. Las bacterias típicas son el estafilococo antitrombina, enterococo y cándida. El catéter venoso central antimicrobiano es eficaz para inhibir el crecimiento de bacterias, especialmente bacterias grampositivas, bacterias gramnegativas y hongos. La siguiente forma indica la tasa antibacteriana de bacterias típicas.\n\nEl tubo está hecho de poliuretano que se mezcla con circonio que contiene plata fosfato a nivel nanométrico, cuando el catéter se coloca en el cuerpo, Ag+ lo hará ser liberado para inhibir el crecimiento de bacterias.\n\nLa probabilidad de infección causada por el catéter venoso central ordinario es del 4,5%, 80% de la infección es causada por bacterias en la superficie de la piel que entran en la sangre a través del sitio de punción del catéter. Las bacterias típicas son el estafilococo antitrombina enterococos y cándida.',
+                detailImages: [
+                    {
+                        image: anestesiaImage2,
+                    },
+                    {
+                        image: anestesiaImage3,
+                    },
+                    {
+                        image: anestesiaImage4,
+                    },
+                ]
             },
             {
                 id: 103,
                 name: 'Tubo Endotraqueal',
-                image: '',
+                image: anestesiaImage5,
                 description: '',
                 specificationsTitle: 'Características',
                 specifications: [
@@ -72,18 +192,46 @@ export const products: ProductCategory[] = [
                     'El manguito es suave, largo y ancho. La característica de alto volumen y baja presión puede reducir el trauma a la mucosa.',
                     'La conexión entre el manguito y el tubo principal es lisa y sin un ángulo agudo, las posibilidades de traumatismo en la mucosa se pueden minimizar durante la inserción.',
                     'El tubo está hecho de material termosensible, se volverá suave después de ser insertado en la tráquea sin traumatismo en la tráquea. La dureza y elasticidad del tubo es moderada, por lo tanto, el tubo no es fácil de doblar.'
+                ],
+                detailImages: [
+                    {
+                        image: anestesiaImage6,
+                    },
+                    {
+                        image: anestesiaImage7,
+                    },
+                    {
+                        image: anestesiaImage8,
+                    },
+                    {
+                        image: anestesiaImage9,
+                    }
                 ]
             },
             {
                 id: 104,
                 name: 'Catéter de Drenaje',
-                image: '',
-                description: 'El material especial de PUR con gran biocompatibilidad evita que el catéter se adhiera y bloquee; el catéter es suave con pequeña irritación y gran resistencia a la cresta. Puede suavizarse en el cuerpo hyuman para que los pacientes puedan sentirse más cómodos.\n\nEl tubo del catéter es radiopaco bajo radiografía y se marca la graduación, por lo que es fácil dominar la profundidad de la colocación del catéter.\n\nLa operación de colocación del catéter es más segura para reducir la posibilidad de infección durante la cirugía mínimamente invasiva con el uso de cables guía. El extremo frontal del alambre guía es naturalmente curvo, por lo que no es fácil lesionar las vísceras de la espláncocele.'
+                image: anestesiaImage10,
+                description: 'El material especial de PUR con gran biocompatibilidad evita que el catéter se adhiera y bloquee; el catéter es suave con pequeña irritación y gran resistencia a la cresta. Puede suavizarse en el cuerpo hyuman para que los pacientes puedan sentirse más cómodos.\n\nEl tubo del catéter es radiopaco bajo radiografía y se marca la graduación, por lo que es fácil dominar la profundidad de la colocación del catéter.\n\nLa operación de colocación del catéter es más segura para reducir la posibilidad de infección durante la cirugía mínimamente invasiva con el uso de cables guía. El extremo frontal del alambre guía es naturalmente curvo, por lo que no es fácil lesionar las vísceras de la espláncocele.',
+                detailImages: [
+                    {
+                        image: anestesiaImage11,
+                    },
+                    {
+                        image: anestesiaImage12,
+                    },
+                    {
+                        image: anestesiaImage13,
+                    },
+                    {
+                        image: anestesiaImage14,
+                    }
+                ]
             },
             {
                 id: 105,
                 name: 'Transductor de Drenaje',
-                image: '',
+                image: anestesiaImage15,
                 description: 'El Transductor de presión desechable y sus accesorios consisten en material de polímero de alto grado médico y poseen compatibilidad biológica avanzada, su estructura y configuración únicas garantizan la seguridad y confiabilidad de los productos.',
                 specificationsTitle: 'Características',
                 specifications: [
@@ -92,6 +240,20 @@ export const products: ProductCategory[] = [
                     'Presión venosa central y otros diversos controles de presión fisiológica.',
                     'Muestreo de sangre.',
                     'Monitoreo de presión neonatos',
+                ],
+                detailImages: [
+                    {
+                        image: anestesiaImage16,
+                    },
+                    {
+                        image: anestesiaImage17,
+                    },
+                    {
+                        image: anestesiaImage18,
+                    },
+                    {
+                        image: anestesiaImage19,
+                    }
                 ]
             },
             {
@@ -133,7 +295,7 @@ export const products: ProductCategory[] = [
             {
                 id: 108,
                 name: 'Catéter de Hemodiálisis',
-                image: '',
+                image: purificacionImage1,
                 description: '',
                 specificationsTitle: 'Características',
                 specifications: [
@@ -141,24 +303,52 @@ export const products: ProductCategory[] = [
                     'Agujeros laterales: 2,5 cm lejos del orificio final reduce el recirculado y la succión de la pared. Minimiza el riesgo de formación de coágulos.',
                     'Radiopaco: facilita la visualización rápida bajo X-Ray.',
                     'Ala de Sutura Rotativa: Facilita la inspección de la piel, evita la succión de la pared del vaso sanguíneo, minimiza el riesgo de infecciones de salida, no se produjo ninguna torcedura.'
+                ],
+                detailImages: [
+                    {
+                        image: purificacionImage2,
+                    },
+                    {
+                        image: purificacionImage3,
+                    },
+                    {
+                        image: purificacionImage4,
+                    },
+                    {
+                        image: purificacionImage5,
+                    }
                 ]
             },
             {
                 id: 109,
                 name: 'Catéter de Hemodiálisis a Largo Plazo',
-                image: '',
+                image: purificacionImage6,
                 description: '',
                 specificationsTitle: 'Características',
                 specifications: [
                     'El catéter está hecho de silicona premium, que tiene excelente biocompatibilidad.',
                     'El manguito de dacrón puede proteger la inmigración de catéter y reducir la posibilidad de CRBI (Catheter Related Bloodstream Infections).',
                     'El material de silicona hace que el catéter sea más flexible, de ahí puede minimizar el trauma en la vena y reducir el incidente de coágulo.'
+                ],
+                detailImages: [
+                    {
+                        image: purificacionImage7,
+                    },
+                    {
+                        image: purificacionImage8,
+                    },
+                    {
+                        image: purificacionImage9,
+                    },
+                    {
+                        image: purificacionImage10,
+                    }
                 ]
             },
             {
                 id: 110,
                 name: 'Líneas de Sangre',
-                image: '',
+                image: purificacionImage11,
                 description: '',
                 specificationsTitle: 'Características',
                 specifications: [
@@ -169,23 +359,45 @@ export const products: ProductCategory[] = [
                     'Conjunto de infusión: es conveniente instalar y desinstalar, lo que garantiza una infusión de precisión y un cebado seguro.',
                     'Bolsa de drenaje: imprimación cerrada para cumplir con los requisitos de control de calidad, bolsa de drenaje de una sola vía y bolsa de drenaje de doble vía disponible.',
                     'Diseño personalizado: diferentes tamaños de tubo de bomba y cámara de goteo para cumplir con los requisitos del cliente.',
+                ],
+                detailImages: [
+                    {
+                        image: purificacionImage12,
+                    },
+                    {
+                        image: purificacionImage13,
+                    },
+                    {
+                        image: purificacionImage14,
+                    }
                 ]
             },
             {
                 id: 111,
                 name: 'A.V. Aguja de Fístula y Aguja de Fístula de Seguridad',
-                image: '',
+                image: purificacionImage15,
                 description: '',
                 specificationsTitle: 'Características',
                 specifications: [
                     'Aguja de fistula: Proceso de pulido fino en la cuchilla para perforar fácil y suavemente. La aguja siliconada reduce el dolor y la coagulación sanguínea. El ojo trasero y las paredes ultra delgadas aseguran un flujo sanguíneo alto. Ala giratoria y ala fija están disponibles.',
                     'Aguja de fístula de seguridad: 1. La aguja se aislará completamente del exterior, lo que puede proteger a los trabajadores médicos y los limpiadores de desechos médicos no se lesionan y evitan las enfermedades transmitidas por la sangre. La estructura simple, la operación fácil, la buena aceptación del mercado, pueden reemplazar los contenedores de objetos punzantes.',
+                ],
+                detailImages: [
+                    {
+                        image: purificacionImage16,
+                    },
+                    {
+                        image: purificacionImage17,
+                    },
+                    {
+                        image: purificacionImage18,
+                    }
                 ]
             },
             {
                 id: 112,
                 name: 'Hemodializador de Bajo Flujo',
-                image: '',
+                image: purificacionImage19,
                 description: '',
                 specificationsTitle: 'Características',
                 specifications: [
@@ -198,13 +410,13 @@ export const products: ProductCategory[] = [
             {
                 id: 113,
                 name: 'Cartucho de Hemoperfusión',
-                image: '',
+                image: purificacionImage20,
                 description: ''
             },
             {
                 id: 114,
                 name: 'Columna de Absorción de Bilirrubina Altamente Específica',
-                image: '',
+                image: purificacionImage21,
                 description: 'La columna de adsorción de bilirrubina de la serie DX está diseñada para el tratamiento de la hepatitis fulminante, insuficiencia hepática postoperatoria, cirrosis biliar primaria, hiperbilirrubinemia y síndrome de ácido biliar. La adsorción de bilirrubina y ácido biliar del plasma y es un enfoque eficaz y seguro para la hemopurificación de los pacientes que tienen hepatopatía como hepatitis fulminante, insuficiencia hepática postoperatoria, cirrosis biliar primaria e hiperbilirrubinemia.'
             }
         ],
@@ -218,7 +430,7 @@ export const products: ProductCategory[] = [
             {
                 id: 115,
                 name: 'Conector Sin Aguja',
-                image: '',
+                image: infusionImage1,
                 description: 'Un conector sin aguja se conecta al extremo de los catéteres vasculares y permite el acceso al catéter para infusión y aspiración.',
                 specificationsTitle: 'Características',
                 specifications: [
@@ -229,12 +441,26 @@ export const products: ProductCategory[] = [
                     'Volumen de cebado: 0.09ml.',
                     'Velocidad de flujo perfecta: 350 ml/min bajo presión de agua de un metro probada por el Equipo Técnico de Baihe.',
                     'Producido bajo GMP: Baihe Medical es un ISO9001, ISO13485 instalación de fabricación registrada.'
+                ],
+                detailImages: [
+                    {
+                        image: infusionImage2,
+                    },
+                    {
+                        image: infusionImage3,
+                    },
+                    {
+                        image: infusionImage4,
+                    },
+                    {
+                        image: infusionImage5,
+                    }
                 ]
             },
             {
                 id: 116,
                 name: 'Válvulas de Puerto Y, Válvulas de Extremo de Sitio-Q y Tubo',
-                image: '',
+                image: infusionImage6,
                 description: '',
                 specificationsTitle: 'Características',
                 specifications: [
@@ -248,13 +474,13 @@ export const products: ProductCategory[] = [
             {
                 id: 117,
                 name: 'Conector Sin Aguja de Presión Positiva',
-                image: '',
+                image: infusionImage1,
                 description: '',
             },
             {
                 id: 118,
                 name: 'Conector Neutral Sin Aguja',
-                image: '',
+                image: infusionImage1,
                 description: 'Tecnología libre de agujas Plus El desplazamiento neutro del líquido diseñado ayuda a reducir las oclusiones relacionadas con el reflujo, el desplazamiento bajo y el reflujo sanguíneo.\n\nCuando se conecta a la punta luer de la jeringa, la válvula abre el parche para el fluido que fluye a través de la válvula, luego a través del mandril principal. Al desconectar la jeringa, el mandril retrocede y sella la trayectoria de la válvula, lo que evita que el líquido fluya hacia atrás',
             },
             {
@@ -266,13 +492,27 @@ export const products: ProductCategory[] = [
             {
                 id: 120,
                 name: 'I.V. Cánula',
-                image: '',
+                image: infusionImage7,
                 description: 'Para todo tipo de pacientes con infusión venosa periférica y muestras de sangre recogidas. Especialmente para los grupos siguientes: Recién nacidos, bebés, niños pequeños, niños pequeños pubertad hombres, mujeres embarazadas, mujeres lactantes, mujeres pacientes con quimioterapia, pacientes con lípidos o alcohol terapia.',
+                detailImages: [
+                    {
+                        image: infusionImage8,
+                    },
+                    {
+                        image: infusionImage9,
+                    },
+                    {
+                        image: infusionImage10,
+                    },
+                    {
+                        image: infusionImage11,
+                    }
+                ]
             },
             {
                 id: 121,
                 name: 'Tubo de Tapón y Extensión de Tres Vías',
-                image: '',
+                image: infusionImage13,
                 description: '',
                 specificationsTitle: 'Características',
                 specifications: [
@@ -283,12 +523,23 @@ export const products: ProductCategory[] = [
                     'CE certificado.',
                     '2000 PCS/cartón.',
                     'Tamaño del cartón: 46x54x72CM.'
+                ],
+                detailImages: [
+                    {
+                        image: infusionImage14,
+                    },
+                    {
+                        image: infusionImage15,
+                    },
+                    {
+                        image: infusionImage16,
+                    }
                 ]
             },
             {
                 id: 122,
                 name: 'Tapón Giratorio de Tres Vías',
-                image: '',
+                image: infusionImage12,
                 description: 'Nuestra nueva llave de paso giratoria permite múltiples conexiones flexibles, para orientar la llave de paso de una manera más flexible.',
                 specificationsTitle: 'Características',
                 specifications: [
@@ -310,13 +561,27 @@ export const products: ProductCategory[] = [
             {
                 id: 123,
                 name: 'Tubo de Alimentación Nasogástrica',
-                image: '',
+                image: infusionImage17,
                 description: 'El tubo de alimentación nasogástrico desechable se compone de un tubo largo y un cable guía, el tubo largo comprende la parte de conexión y el tubo con ojos laterales y el cable guía comprende el conector y el cable guía.',
+                detailImages: [
+                    {
+                        image: infusionImage18,
+                    },
+                    {
+                        image: infusionImage19,
+                    },
+                    {
+                        image: infusionImage20,
+                    },
+                    {
+                        image: infusionImage21,
+                    }
+                ]
             },
             {
                 id: 124,
                 name: 'Tapa Protectora Desechable',
-                image: '',
+                image: infusionImage22,
                 description: 'Nuestra tapa protectora desechable se puede utilizar para conectar el conector de bloqueo interno del cono o el conector sin aguja, desinfectar sus superficies y actuar como una barrera física para evitar la contaminación.',
                 specificationsTitle: 'Características',
                 specifications: [
@@ -324,12 +589,20 @@ export const products: ProductCategory[] = [
                     'Desinfectar continuamente durante 7 días (70% de isopropanol).',
                     'Operación simple, mejorar la eficiencia de las enfermeras.',
                     'Embalaje individual, cumplir con las especificaciones de operación del hospital.',
+                ],
+                detailImages: [
+                    {
+                        image: infusionImage23,
+                    },
+                    {
+                        image: infusionImage24,
+                    }
                 ]
             },
             {
                 id: 125,
                 name: 'Foley de Silicona',
-                image: '',
+                image: infusionImage25,
                 description: 'Los catéteres Foley de silicona siguen siendo la opción preferida para el uso permanente a largo plazo. Estos catéteres de foley sin látex tienen una vida más larga y son de naturaleza más rígida, lo que se considera una ventaja. La silicona es típicamente resistente al ataque químico e insensible a los cambios de temperatura. Las características incluyen estabilidad química y térmica, baja tensión superficial e hidrofobicidad. La silicona es uno de los grupos de biomateriales más probados y reconocido por su inherente biocompatibilidad y biodurabilidad.',
                 specificationsTitle: 'Características',
                 specifications: [
@@ -337,6 +610,14 @@ export const products: ProductCategory[] = [
                     'El catéter foley de silicona tiene un lumen interno más grande para un mejor drenaje que el mismo tamaño hecho de látex de PVC.',
                     'No se produce cristal de urato ni irritación durante la intubación, por lo que se puede evitar la infección uretral asociada al catéter.',
                     'El catéter foley de silicona es ampliamente aceptado debido a una mejor biocompatibilidad y el período de permanencia puede ser de 30 días, lo que puede reducir el trauma a la uretra causado por la intubación repetida.',
+                ],
+                detailImages: [
+                    {
+                        image: infusionImage26,
+                    },
+                    {
+                        image: infusionImage27,
+                    }
                 ]
             }
         ]
@@ -351,25 +632,49 @@ export const products: ProductCategory[] = [
                 id: 126,
                 name: 'Vestido de Herida de Alginato',
                 image: '',
-                description: 'Vestido de Herida de Alginato es un apósito avanzado para heridas fabricado a partir de alginato de sodio extraído de algas marinas naturales. Cuando está en contacto con una herida, el calcio en el apósito se intercambia con el sodio del líquido de la herida, convirtiendo el apósito en un gel. Esto mantiene un ambiente húmedo de curación de heridas que es bueno para la recuperación de heridas exudantes y ayuda con el desbridamiento de heridas desprendidas.\n\nLa propiedad de formación de gel de un apósito de alginato protege contra la invasión bacteriana, una propiedad que hace que el alginato sea un apósito ideal para heridas para una regeneración y curación más rápida de los tejidos en heridas exudadas. La liberación de iones de calcio también puede acelerar el proceso de coagulación de la sangre, lo que ayuda aún más a la curación, lo que lleva a tiempos de tratamiento más cortos.'
+                description: 'Vestido de Herida de Alginato es un apósito avanzado para heridas fabricado a partir de alginato de sodio extraído de algas marinas naturales. Cuando está en contacto con una herida, el calcio en el apósito se intercambia con el sodio del líquido de la herida, convirtiendo el apósito en un gel. Esto mantiene un ambiente húmedo de curación de heridas que es bueno para la recuperación de heridas exudantes y ayuda con el desbridamiento de heridas desprendidas.\n\nLa propiedad de formación de gel de un apósito de alginato protege contra la invasión bacteriana, una propiedad que hace que el alginato sea un apósito ideal para heridas para una regeneración y curación más rápida de los tejidos en heridas exudadas. La liberación de iones de calcio también puede acelerar el proceso de coagulación de la sangre, lo que ayuda aún más a la curación, lo que lleva a tiempos de tratamiento más cortos.',
+                detailImages: [
+                    {
+                        image: cuidadoImage1,
+                    },
+                    {
+                        image: cuidadoImage2,
+                    }
+                ]
             },
             {
                 id: 127,
                 name: 'Dispositivo de Cierre de Herida',
-                image: '',
+                image: cuidadoImage3,
                 description: 'El dispositivo de cierre de heridas consiste en un par de pinzas de polipropileno con dos paneles adhesivos.\nLos paneles adhesivos son tejidos no tejidos porosos recubiertos con un adhesivo hipoalergénico sensible a la presión.\nEs un dispositivo novedoso para el cierre rápido y fácil de la mayoría de las heridas agudas, por ejemplo, heridas laceradas y quirúrgicas.\nEl dispositivo está diseñado para permitir un cierre no invasivo de una herida y para fomentar un cierre apretado de la herida para una curación temprana y exitosa.La técnica no invasiva reduce el trauma tisular y mejora la comodidad del paciente, y posiblemente causa menos cicatrices después de la curación.'
             },
             {
                 id: 128,
                 name: 'Quitosano',
                 image: '',
-                description: 'El apósito para heridas de quitosano consiste en fibras de quitosano al 100%. El quitosano es un almidón (polímero) natural derivado de las conchas de los crustáceos. Es un apósito suave y altamente absorbente que gelifica cuando está en contacto con exudados de heridas y proporciona un ambiente húmedo para una curación óptima.\nEl apósito para heridas de quitosano tiene la absorbencia y las características gelificantes similares a la carboximetilcelulosa, pero con beneficios adicionales de ser hemostático y bacteriostático son importantes para el proceso de curación de heridas.'
+                description: 'El apósito para heridas de quitosano consiste en fibras de quitosano al 100%. El quitosano es un almidón (polímero) natural derivado de las conchas de los crustáceos. Es un apósito suave y altamente absorbente que gelifica cuando está en contacto con exudados de heridas y proporciona un ambiente húmedo para una curación óptima.\nEl apósito para heridas de quitosano tiene la absorbencia y las características gelificantes similares a la carboximetilcelulosa, pero con beneficios adicionales de ser hemostático y bacteriostático son importantes para el proceso de curación de heridas.',
+                detailImages: [
+                    {
+                        image: cuidadoImage4,
+                    },
+                    {
+                        image: cuidadoImage5,
+                    }
+                ]
             },
             {
                 id: 129,
                 name: 'Carboximetilcelulosa (CMC)',
-                image: '',
-                description: 'El apósito para heridas CMC es un almohadilla no tejida suave o apósito de cinta hecho de fibras 100% de carboximetilcelulosa (CMC), el apósito fibroso para heridas CMC es una tecnología probada para el apósito absorbente para heridas.\n\nEl apósito para heridas CMC forma un gel transparente cuando está en contacto con una solución acuosa. La gelificación permite el apósito para bloquear la humedad dentro del apósito proporcionar el ambiente húmedo para una curación óptima.'
+                image: cuidadoImage6,
+                description: 'El apósito para heridas CMC es un almohadilla no tejida suave o apósito de cinta hecho de fibras 100% de carboximetilcelulosa (CMC), el apósito fibroso para heridas CMC es una tecnología probada para el apósito absorbente para heridas.\n\nEl apósito para heridas CMC forma un gel transparente cuando está en contacto con una solución acuosa. La gelificación permite el apósito para bloquear la humedad dentro del apósito proporcionar el ambiente húmedo para una curación óptima.',
+                detailImages: [
+                    {
+                        image: cuidadoImage7,
+                    },
+                    {
+                        image: cuidadoImage8,
+                    }
+                ]
             }
         ]
     },
@@ -382,13 +687,24 @@ export const products: ProductCategory[] = [
             {
                 id: 130,
                 name: 'Endoprótesis Ureteral',
-                image: '',
+                image: urologiaImage1,
                 description: 'El stent ureteral desechable se usa para un solo uso durante la pielografía o drenaje retrógrado.\n\nLos stents se usan por varias razones en pacientes con cálculos renales. Se pueden colocar para ayudar a reducir el dolor agudo de una piedra o para permitir el drenaje cuando la infección está presente o cuando una piedra impide que un riñón funcione adecuadamente. Los stents se colocan comúnmente después de la cirugía para obtener piedras para permitir la curación y para garantizar que la hinchazón no bloquee el drenaje de la orina después del procedimiento.',
+                detailImages: [
+                    {
+                        image: urologiaImage2,
+                    },
+                    {
+                        image: urologiaImage3,
+                    },
+                    {
+                        image: urologiaImage4,
+                    }
+                ]
             },
             {
                 id: 131,
                 name: 'Bolsa de Drenaje Anti-Reflujo Desechable',
-                image: '',
+                image: urologiaImage5,
                 description: 'Nuestra bolsa de drenaje antirreflujo desechable es adecuado para recolectar orina de pacientes con incontinencia urinaria, coma e incapacidades o para recolectar líquido de drenaje de heridas en cooperación con otros instrumentos.',
                 specificationsTitle: 'Características',
                 specifications: [
@@ -400,6 +716,17 @@ export const products: ProductCategory[] = [
                     'El tubo es transparente, elástico y no roscado.',
                     'Orificio urinario superior: gran diámetro, entrada rápida de orina. Valor de drenaje inferior tipo T: conveniente para la operación con una sola mano y puede prevenir salpicaduras de orina.',
                     'Con gancho de seguridad o vendaje, se puede fijar efectivamente en la posición adecuada.',
+                ],
+                detailImages: [
+                    {
+                        image: urologiaImage6,
+                    },
+                    {
+                        image: urologiaImage7,
+                    },
+                    {
+                        image: urologiaImage8,
+                    }
                 ]
             }
         ]
@@ -413,7 +740,7 @@ export const products: ProductCategory[] = [
             {
                 id: 132,
                 name: 'Alambre Guía de Nitinol',
-                image: '',
+                image: accesoriosImage1,
                 description: '',
                 specificationsTitle: 'Características',
                 specifications: [
@@ -421,12 +748,26 @@ export const products: ProductCategory[] = [
                     'Fuerza de ruptura de la punta del cable guía ABLE®: ≥40~50N, mientras que ISO 11070:1999.',
                     'Incluye y supera las principales características del alambre guía de acero inoxidable.',
                     'Tamaños: 0.018, 0.021, 0. 025, 0.028, 0.032, 0.035, 0.030.',
+                ],
+                detailImages: [
+                    {
+                        image: accesoriosImage2,
+                    },
+                    {
+                        image: accesoriosImage3,
+                    },
+                    {
+                        image: accesoriosImage4,
+                    },
+                    {
+                        image: accesoriosImage5,
+                    }
                 ]
             },
             {
                 id: 133,
                 name: 'Alambre Guía de Césped Inoxidable',
-                image: '',
+                image: accesoriosImage6,
                 description: '',
                 specificationsTitle: 'Características',
                 specifications: [
@@ -434,12 +775,26 @@ export const products: ProductCategory[] = [
                     'Cónico apropiado, combinación perfecta de punta.',
                     'Excelente fuerza de sujeción apoyada por el núcleo SS304.',
                     'Indicación clara de la escala para una mejor observación.',
+                ],
+                detailImages: [
+                    {
+                        image: accesoriosImage2,
+                    },
+                    {
+                        image: accesoriosImage3,
+                    },
+                    {
+                        image: accesoriosImage4,
+                    },
+                    {
+                        image: accesoriosImage5,
+                    }
                 ]
             },
             {
                 id: 134,
                 name: 'Alambre Guía para Tubo de Alimentación Nasogástico',
-                image: '',
+                image: accesoriosImage7,
                 description: '',
                 specificationsTitle: 'Características',
                 specifications: [
@@ -452,7 +807,7 @@ export const products: ProductCategory[] = [
             {
                 id: 135,
                 name: 'Alambre Guía PTFE',
-                image: '',
+                image: accesoriosImage8,
                 description: '',
                 specificationsTitle: 'Características',
                 specifications: [
@@ -462,49 +817,85 @@ export const products: ProductCategory[] = [
                     'Tener la capacidad antitrombótica.',
                     'Ambos extremos flexibles alcanzan una buena flexibilidad.',
                     'Diseño de retención de forma de punta, buena resistencia.',
+                ],
+                detailImages: [
+                    {
+                        image: accesoriosImage9,
+                    },
+                    {
+                        image: accesoriosImage10,
+                    },
+                    {
+                        image: accesoriosImage11,
+                    },
+                    {
+                        image: accesoriosImage12,
+                    }
                 ]
             },
             {
                 id: 136,
                 name: 'Catéter Individual',
-                image: '',
+                image: accesoriosImage13,
                 description: '',
             },
             {
                 id: 137,
                 name: 'Cap de Heparina',
-                image: '',
+                image: infusionImage1,
                 description: '',
+                detailImages: [
+                    {
+                        image: infusionImage2,
+                    },
+                    {
+                        image: infusionImage3,
+                    },
+                    {
+                        image: infusionImage4,
+                    },
+                    {
+                        image: infusionImage5,
+                    }
+                ]
             },
             {
                 id: 138,
                 name: 'Alambre Guía Advancer',
-                image: '',
+                image: accesoriosImage14,
                 description: '',
             },
             {
                 id: 139,
                 name: 'Introductor Aguja',
-                image: '',
+                image: infusionImage6,
                 description: '',
             },
             {
                 id: 140,
                 name: 'Dilatador',
-                image: '',
+                image: accesoriosImage15,
                 description: '',
             },
             {
                 id: 141,
                 name: 'Introductor Jeringa',
-                image: '',
+                image: accesoriosImage16,
                 description: '',
             },
             {
                 id: 142,
                 name: 'Escalpelo',
-                image: '',
+                image: accesoriosImage17,
                 description: '',
+                detailImages: [
+                    {
+                        image: accesoriosImage18,
+                    },
+                    {
+                        image: accesoriosImage19,
+                    }
+                ]
             },
             {
                 id: 143,

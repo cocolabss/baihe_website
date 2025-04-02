@@ -80,7 +80,7 @@ const ProductDetailView: React.FC = () => {
                                     ))}
                                 </div>
                             ) : (
-                                <div className="prose max-w-none text-darkgray text-justify pb-32">
+                                <div className="prose max-w-none text-darkgray text-justify pb-4">
                                     <span className="italic">No hay información disponible sobre este producto</span>
                                 </div>
                             )}
@@ -98,7 +98,7 @@ const ProductDetailView: React.FC = () => {
                         )}
                     </div>
 
-                    <div className="space-y-6">
+                    <div className="space-y-12">
                         {product.image && (
                             <div className="shadow-[-5px_5px_5px_0px_rgba(0,0,0,0.2)] overflow-hidden">
                                 <img
@@ -110,14 +110,14 @@ const ProductDetailView: React.FC = () => {
                         )}
 
                         {product.detailImages && product.detailImages.length > 0 && (
-                            <div className="grid grid-cols-2 gap-4">
+                            <div className="grid grid-cols-2 gap-6">
                                 {product.detailImages.map((detail, index) => (
                                     detail.image && (
-                                        <div key={index} className="border rounded-lg overflow-hidden">
+                                        <div key={index} className="shadow-[-5px_5px_5px_0px_rgba(0,0,0,0.2)] overflow-hidden">
                                             <img
                                                 src={detail.image}
                                                 alt={`Detalle ${index + 1}`}
-                                                className="w-full h-32 object-cover"
+                                                className="w-full h-52 object-cover"
                                             />
                                             {detail.subtitle && (
                                                 <p className="text-right text-sm text-darkgray p-2">
