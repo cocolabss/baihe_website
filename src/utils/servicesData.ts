@@ -6,17 +6,25 @@ import serviceIcon5 from '../assets/icons/services/service_5.svg'
 import serviceIcon6 from '../assets/icons/services/service_6.svg'
 import serviceIcon7 from '../assets/icons/services/service_7.svg'
 
+// Icons hover
+import serviceIconHover1 from '../assets/icons/services/service_hover1.svg'
+import serviceIconHover2 from '../assets/icons/services/service_hover2.svg'
+import serviceIconHover3 from '../assets/icons/services/service_hover3.svg'
+import serviceIconHover4 from '../assets/icons/services/service_hover4.svg'
+
 export const services = [
     {
         id: 1,
         title: 'Tecnología de Vanguardia',
         icon: serviceIcon1,
+        iconHover: serviceIconHover1,
         description: 'Métodos de producción modernos y eficientes de consumibles médicos.',
     },
     {
         id: 2,
         title: 'Sistemas de Calidad Perfeccionados',
         icon: serviceIcon2,
+        iconHover: serviceIconHover2,
         description: 'Certificaciones Internacionales como ISO 13485, CE y FDA.',
         color: true
     },
@@ -24,12 +32,14 @@ export const services = [
         id: 3,
         title: 'Equipo Profesional y Especializado',
         icon: serviceIcon3,
+        iconHover: serviceIconHover3,
         description: 'Un grupo de expertos en investigación y desarrollo.',
     },
     {
         id: 4,
         title: 'Productos de Alto Nivel',
         icon: serviceIcon4,
+        iconHover: serviceIconHover4,
         description: 'Lideramos el mercado con catéres venosos centrales y para hemodialisis.',
     }
 ]

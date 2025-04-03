@@ -47,7 +47,7 @@ const NewsView: React.FC = () => {
                         <Button color="bg-red" text="Contácta con un asesor" />
                     </div>
                     <div className="justify-self-end">
-                        <img src={peopleImage} alt="Imagen" className="w-full h-[450px]" />
+                        <img src={peopleImage} alt="Imagen" className="w-full h-full" />
                     </div>
                 </section>
 
@@ -99,6 +99,7 @@ const NewsView: React.FC = () => {
                             <Button
                                 color="bg-green"
                                 text="Conoce nuestros productos"
+                                onClick={() => navigate('/products')}
                             />
                         </div>
                     </div>

@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useState, useRef, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { ChevronRight, ChevronDown } from 'lucide-react';
 
@@ -24,7 +24,7 @@ const Accordion: React.FC<AccordionProps> = ({ title, children }) => {
     return (
         <div className="border-t border-b border-gray-200">
             <button
-                className={`w-full flex justify-between items-center p-4 ${isOpen ? 'text-green' : 'text-black'
+                className={`w-full flex justify-between items-center p-4 ${isOpen ? 'text-green' : 'text-darkgray'
                     } hover:text-green transition-colors`}
                 onClick={() => setIsOpen(!isOpen)}
             >
@@ -46,14 +46,46 @@ const Accordion: React.FC<AccordionProps> = ({ title, children }) => {
 
 const ProductCard: React.FC<{ product: ProductItem }> = ({ product }) => {
     const navigate = useNavigate();
+    const [isLoaded, setIsLoaded] = useState(false);
+    const imgRef = useRef<HTMLImageElement>(null);
+
+    useEffect(() => {
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting && imgRef.current && !isLoaded) {
+                    imgRef.current.src = product.image;
+                    imgRef.current.onload = () => setIsLoaded(true);
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, { threshold: 0.1 });
+
+        if (imgRef.current) {
+            observer.observe(imgRef.current);
+        }
+
+        return () => observer.disconnect();
+    }, [isLoaded, product.image]);
 
     return (
         <div className="bg-white rounded-b-3xl overflow-hidden shadow-[-5px_5px_5px_0px_rgba(0,0,0,0.2)] hover:shadow-md transition-shadow">
-            <div className="w-full h-48 overflow-hidden">
+            <div className="w-full h-48 overflow-hidden relative">
+                {/* Skeleton Loader */}
+                {!isLoaded && (
+                    <div className="absolute inset-0 bg-gray-200 animate-pulse flex items-center justify-center">
+                        <svg className="w-10 h-10 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z" />
+                        </svg>
+                    </div>
+                )}
+
+                {/* Imagen real */}
                 <img
-                    src={product.image}
+                    ref={imgRef}
                     alt={product.name}
-                    className="w-full h-full object-cover"
+                    className={`w-full h-full object-cover transition-opacity duration-300 ${isLoaded ? 'opacity-100' : 'opacity-0'}`}
+                    loading="lazy"
+                    data-src={product.image}
                 />
             </div>
             <div className="p-4 flex flex-col min-h-[130px]">
@@ -72,6 +104,14 @@ const ProductCard: React.FC<{ product: ProductItem }> = ({ product }) => {
 
 const ProductsView: React.FC = () => {
     const navigate = useNavigate();
+    const [bannerLoaded, setBannerLoaded] = useState(false);
+    const bannerRef = useRef<HTMLImageElement>(null);
+
+    useEffect(() => {
+        if (bannerRef.current) {
+            bannerRef.current.onload = () => setBannerLoaded(true);
+        }
+    }, []);
 
     return (
         <MainLayout>
@@ -102,8 +142,21 @@ const ProductsView: React.FC = () => {
                     </div>
                     <Button color="bg-red" text="Contácta con un asesor" />
                 </div>
-                <div className="justify-self-end">
-                    <img src={productsImage} alt="Imagen" className="w-full h-[450px]" />
+                <div className="justify-self-end relative">
+                    {!bannerLoaded && (
+                        <div className="absolute inset-0 bg-gray-200 animate-pulse flex items-center justify-center">
+                            <svg className="w-12 h-12 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z" />
+                            </svg>
+                        </div>
+                    )}
+                    <img
+                        ref={bannerRef}
+                        src={productsImage}
+                        alt="Productos médicos"
+                        className={`w-full h-full ${bannerLoaded ? 'opacity-100' : 'opacity-0'} transition-opacity duration-300`}
+                        loading="lazy"
+                    />
                 </div>
             </section>
 
