@@ -19,9 +19,10 @@ import anestesiaImage16 from '../assets/images/products/anestesia/anestesia_16.j
 import anestesiaImage17 from '../assets/images/products/anestesia/anestesia_17.jpg';
 import anestesiaImage18 from '../assets/images/products/anestesia/anestesia_18.jpg';
 import anestesiaImage19 from '../assets/images/products/anestesia/anestesia_19.jpg';
+import anestesiaImage20 from '../assets/images/products/anestesia/anestesia_20.png';
 
 // Purificación de Sangre
-import purificacionImage from '../assets/images/products/purificacion_sangre.png';
+// import purificacionImage from '../assets/images/products/purificacion_sangre.png';
 import purificacionImage1 from '../assets/images/products/purificacion_sangre/purificacion_sangre_1.jpg';
 import purificacionImage2 from '../assets/images/products/purificacion_sangre/purificacion_sangre_2.jpg';
 import purificacionImage3 from '../assets/images/products/purificacion_sangre/purificacion_sangre_3.jpg';
@@ -45,7 +46,7 @@ import purificacionImage20 from '../assets/images/products/purificacion_sangre/p
 import purificacionImage21 from '../assets/images/products/purificacion_sangre/purificacion_sangre_21.jpg';
 
 // Infusión
-import infusionImage from '../assets/images/products/infusion_intravenosa.png';
+// import infusionImage from '../assets/images/products/infusion_intravenosa.png';
 import infusionImage1 from '../assets/images/products/infusion/infusion_1.jpg';
 import infusionImage2 from '../assets/images/products/infusion/infusion_2.jpg';
 import infusionImage3 from '../assets/images/products/infusion/infusion_3.jpg';
@@ -97,7 +98,7 @@ import urologiaImage7 from '../assets/images/products/urologia/urologia_7.png';
 import urologiaImage8 from '../assets/images/products/urologia/urologia_8.png';
 
 // Alambre de Guía y Accesorios
-import alambreImage from '../assets/images/products/alambre_guia.png';
+// import alambreImage from '../assets/images/products/alambre_guia.png';
 import accesoriosImage1 from '../assets/images/products/accesories/accesories_1.png';
 import accesoriosImage2 from '../assets/images/products/accesories/accesories_2.png';
 import accesoriosImage3 from '../assets/images/products/accesories/accesories_3.png';
@@ -259,7 +260,7 @@ export const products: ProductCategory[] = [
             {
                 id: 106,
                 name: 'Catéter Arterial',
-                image: '',
+                image: anestesiaImage20,
                 description: '',
                 specificationsTitle: 'Características',
                 specifications: [
@@ -290,7 +291,7 @@ export const products: ProductCategory[] = [
     {
         id: 2,
         title: 'Purificación de sangre',
-        image: purificacionImage,
+        image: purificacionImage1,
         products: [
             {
                 id: 108,
@@ -424,7 +425,7 @@ export const products: ProductCategory[] = [
     {
         id: 3,
         title: 'Infusiones intravenosas',
-        image: infusionImage,
+        image: infusionImage1,
         description: '',
         products: [
             {
@@ -734,7 +735,7 @@ export const products: ProductCategory[] = [
     {
         id: 6,
         title: 'Alambre guía y otros accesorios',
-        image: alambreImage,
+        image: accesoriosImage3,
         description: '',
         products: [
             {
