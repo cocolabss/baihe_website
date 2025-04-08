@@ -5,9 +5,11 @@ export interface CountryCoordinates {
     lng: number;
 }
 
-export const countryInfo: Record<CountryCode, { name: string; description: string; coordinates?: CountryCoordinates }> = {
+export const countryInfo: Record<CountryCode, { name: string; nameRegional?: string; emailRegional?: string; description: string; coordinates?: CountryCoordinates }> = {
     'PERÚ': {
         name: 'Perú',
+        nameRegional: 'Angella Tipiani',
+        emailRegional: 'angella@baihemedical.com',
         description: '',
         coordinates: {
             lat: -9.189967,
@@ -16,6 +18,8 @@ export const countryInfo: Record<CountryCode, { name: string; description: strin
     },
     'COLOMBIA': {
         name: 'Colombia',
+        nameRegional: 'Juan Mesa',
+        emailRegional: 'juan@baihemedical.com',
         description: '',
         coordinates: {
             lat: 4.570868,
@@ -24,6 +28,8 @@ export const countryInfo: Record<CountryCode, { name: string; description: strin
     },
     'VENEZUELA': {
         name: "Venezuela",
+        nameRegional: "Yumaira Rojas",
+        emailRegional: "yumaira@baihemedical.com",
         description: "",
         coordinates: {
             lat: 6.42375,
@@ -32,6 +38,8 @@ export const countryInfo: Record<CountryCode, { name: string; description: strin
     },
     'CHILE': {
         name: "Chile",
+        nameRegional: "Magdalena Vargas",
+        emailRegional: "chile@baihemedical.com",
         description: "",
         coordinates: {
             lat: -35.675147,
@@ -40,6 +48,8 @@ export const countryInfo: Record<CountryCode, { name: string; description: strin
     },
     'ECUADOR': {
         name: "Ecuador",
+        nameRegional: "Katerina Mymrykova",
+        emailRegional: "katerina@baihemedical.com",
         description: "",
         coordinates: {
             lat: -1.831239,
@@ -48,6 +58,8 @@ export const countryInfo: Record<CountryCode, { name: string; description: strin
     },
     'ARGENTINA': {
         name: "Argentina",
+        nameRegional: "Joel Ferreira",
+        emailRegional: "joel@baihemedical.com",
         description: "",
         coordinates: {
             lat: -38.416097,
@@ -56,6 +68,8 @@ export const countryInfo: Record<CountryCode, { name: string; description: strin
     },
     'URUGUAY': {
         name: "Uruguay",
+        nameRegional: "Joel Ferreira",
+        emailRegional: "joel@baihemedical.com",
         description: "",
         coordinates: {
             lat: -32.522779,
@@ -64,6 +78,8 @@ export const countryInfo: Record<CountryCode, { name: string; description: strin
     },
     'PARAGUAY': {
         name: "Paraguay",
+        nameRegional: "Joel Ferreira",
+        emailRegional: "joel@baihemedical.com",
         description: "",
         coordinates: {
             lat: -23.442503,
@@ -72,6 +88,8 @@ export const countryInfo: Record<CountryCode, { name: string; description: strin
     },
     'BOLIVIA': {
         name: "Bolivia",
+        nameRegional: "Joel Ferreira",
+        emailRegional: "joel@baihemedical.com",
         description: "",
         coordinates: {
             lat: -16.290154,

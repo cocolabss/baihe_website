@@ -159,9 +159,6 @@ const HomeView: React.FC = () => {
                                     />
                                     <p className='text-darkgray'>{service.description}</p>
                                 </div>
-                                <div className="flex justify-end">
-                                    <Button color="bg-green" text="Ver más" />
-                                </div>
                             </div>
                         ))}
                     </div>
