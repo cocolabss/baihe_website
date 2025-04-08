@@ -1,123 +1,124 @@
 // Anestesia
-import anestesiaImage from '../assets/images/products/anestesia.jpg';
-import anestesiaImage1 from '../assets/images/products/anestesia/anestesia_1.jpg';
-import anestesiaImage2 from '../assets/images/products/anestesia/anestesia_2.jpg';
-import anestesiaImage3 from '../assets/images/products/anestesia/anestesia_3.jpg';
-import anestesiaImage4 from '../assets/images/products/anestesia/anestesia_4.jpg';
-import anestesiaImage5 from '../assets/images/products/anestesia/anestesia_5.jpg';
-import anestesiaImage6 from '../assets/images/products/anestesia/anestesia_6.jpg';
-import anestesiaImage7 from '../assets/images/products/anestesia/anestesia_7.jpg';
-import anestesiaImage8 from '../assets/images/products/anestesia/anestesia_8.jpg';
-import anestesiaImage9 from '../assets/images/products/anestesia/anestesia_9.jpg';
-import anestesiaImage10 from '../assets/images/products/anestesia/anestesia_10.jpg';
-import anestesiaImage11 from '../assets/images/products/anestesia/anestesia_11.jpg';
-import anestesiaImage12 from '../assets/images/products/anestesia/anestesia_12.jpg';
-import anestesiaImage13 from '../assets/images/products/anestesia/anestesia_13.jpg';
-import anestesiaImage14 from '../assets/images/products/anestesia/anestesia_14.jpg';
-import anestesiaImage15 from '../assets/images/products/anestesia/anestesia_15.jpg';
-import anestesiaImage16 from '../assets/images/products/anestesia/anestesia_16.jpg';
-import anestesiaImage17 from '../assets/images/products/anestesia/anestesia_17.jpg';
-import anestesiaImage18 from '../assets/images/products/anestesia/anestesia_18.jpg';
-import anestesiaImage19 from '../assets/images/products/anestesia/anestesia_19.jpg';
-import anestesiaImage20 from '../assets/images/products/anestesia/anestesia_20.png';
+import anestesiaImage from '../assets/images/products/anestesia.webp';
+import anestesiaImage1 from '../assets/images/products/anestesia/anestesia_1.webp';
+import anestesiaImage2 from '../assets/images/products/anestesia/anestesia_2.webp';
+import anestesiaImage3 from '../assets/images/products/anestesia/anestesia_3.webp';
+import anestesiaImage4 from '../assets/images/products/anestesia/anestesia_4.webp';
+import anestesiaImage5 from '../assets/images/products/anestesia/anestesia_5.webp';
+import anestesiaImage6 from '../assets/images/products/anestesia/anestesia_6.webp';
+import anestesiaImage7 from '../assets/images/products/anestesia/anestesia_7.webp';
+import anestesiaImage8 from '../assets/images/products/anestesia/anestesia_8.webp';
+import anestesiaImage9 from '../assets/images/products/anestesia/anestesia_9.webp';
+import anestesiaImage10 from '../assets/images/products/anestesia/anestesia_10.webp';
+import anestesiaImage11 from '../assets/images/products/anestesia/anestesia_11.webp';
+import anestesiaImage12 from '../assets/images/products/anestesia/anestesia_12.webp';
+import anestesiaImage13 from '../assets/images/products/anestesia/anestesia_13.webp';
+import anestesiaImage14 from '../assets/images/products/anestesia/anestesia_14.webp';
+import anestesiaImage15 from '../assets/images/products/anestesia/anestesia_15.webp';
+import anestesiaImage16 from '../assets/images/products/anestesia/anestesia_16.webp';
+import anestesiaImage17 from '../assets/images/products/anestesia/anestesia_17.webp';
+import anestesiaImage18 from '../assets/images/products/anestesia/anestesia_18.webp';
+import anestesiaImage19 from '../assets/images/products/anestesia/anestesia_19.webp';
+import anestesiaImage20 from '../assets/images/products/anestesia/anestesia_20.webp';
+import anestesiaImage21 from '../assets/images/products/anestesia/anestesia_21.webp';
 
 // Purificación de Sangre
-// import purificacionImage from '../assets/images/products/purificacion_sangre.png';
-import purificacionImage1 from '../assets/images/products/purificacion_sangre/purificacion_sangre_1.jpg';
-import purificacionImage2 from '../assets/images/products/purificacion_sangre/purificacion_sangre_2.jpg';
-import purificacionImage3 from '../assets/images/products/purificacion_sangre/purificacion_sangre_3.jpg';
-import purificacionImage4 from '../assets/images/products/purificacion_sangre/purificacion_sangre_4.jpg';
-import purificacionImage5 from '../assets/images/products/purificacion_sangre/purificacion_sangre_5.jpg';
-import purificacionImage6 from '../assets/images/products/purificacion_sangre/purificacion_sangre_6.jpg';
-import purificacionImage7 from '../assets/images/products/purificacion_sangre/purificacion_sangre_7.jpg';
-import purificacionImage8 from '../assets/images/products/purificacion_sangre/purificacion_sangre_8.jpg';
-import purificacionImage9 from '../assets/images/products/purificacion_sangre/purificacion_sangre_9.jpg';
-import purificacionImage10 from '../assets/images/products/purificacion_sangre/purificacion_sangre_10.jpg';
-import purificacionImage11 from '../assets/images/products/purificacion_sangre/purificacion_sangre_11.png';
-import purificacionImage12 from '../assets/images/products/purificacion_sangre/purificacion_sangre_12.png';
-import purificacionImage13 from '../assets/images/products/purificacion_sangre/purificacion_sangre_13.jpg';
-import purificacionImage14 from '../assets/images/products/purificacion_sangre/purificacion_sangre_14.png';
-import purificacionImage15 from '../assets/images/products/purificacion_sangre/purificacion_sangre_15.png';
-import purificacionImage16 from '../assets/images/products/purificacion_sangre/purificacion_sangre_16.png';
-import purificacionImage17 from '../assets/images/products/purificacion_sangre/purificacion_sangre_17.png';
-import purificacionImage18 from '../assets/images/products/purificacion_sangre/purificacion_sangre_18.png';
-import purificacionImage19 from '../assets/images/products/purificacion_sangre/purificacion_sangre_19.jpg';
-import purificacionImage20 from '../assets/images/products/purificacion_sangre/purificacion_sangre_20.jpg';
-import purificacionImage21 from '../assets/images/products/purificacion_sangre/purificacion_sangre_21.jpg';
+// import purificacionImage from '../assets/images/products/purificacion_sangre.webp';
+import purificacionImage1 from '../assets/images/products/purificacion_sangre/purificacion_sangre_1.webp';
+import purificacionImage2 from '../assets/images/products/purificacion_sangre/purificacion_sangre_2.webp';
+import purificacionImage3 from '../assets/images/products/purificacion_sangre/purificacion_sangre_3.webp';
+import purificacionImage4 from '../assets/images/products/purificacion_sangre/purificacion_sangre_4.webp';
+import purificacionImage5 from '../assets/images/products/purificacion_sangre/purificacion_sangre_5.webp';
+import purificacionImage6 from '../assets/images/products/purificacion_sangre/purificacion_sangre_6.webp';
+import purificacionImage7 from '../assets/images/products/purificacion_sangre/purificacion_sangre_7.webp';
+import purificacionImage8 from '../assets/images/products/purificacion_sangre/purificacion_sangre_8.webp';
+import purificacionImage9 from '../assets/images/products/purificacion_sangre/purificacion_sangre_9.webp';
+import purificacionImage10 from '../assets/images/products/purificacion_sangre/purificacion_sangre_10.webp';
+import purificacionImage11 from '../assets/images/products/purificacion_sangre/purificacion_sangre_11.webp';
+import purificacionImage12 from '../assets/images/products/purificacion_sangre/purificacion_sangre_12.webp';
+import purificacionImage13 from '../assets/images/products/purificacion_sangre/purificacion_sangre_13.webp';
+import purificacionImage14 from '../assets/images/products/purificacion_sangre/purificacion_sangre_14.webp';
+import purificacionImage15 from '../assets/images/products/purificacion_sangre/purificacion_sangre_15.webp';
+import purificacionImage16 from '../assets/images/products/purificacion_sangre/purificacion_sangre_16.webp';
+import purificacionImage17 from '../assets/images/products/purificacion_sangre/purificacion_sangre_17.webp';
+import purificacionImage18 from '../assets/images/products/purificacion_sangre/purificacion_sangre_18.webp';
+import purificacionImage19 from '../assets/images/products/purificacion_sangre/purificacion_sangre_19.webp';
+import purificacionImage20 from '../assets/images/products/purificacion_sangre/purificacion_sangre_20.webp';
+import purificacionImage21 from '../assets/images/products/purificacion_sangre/purificacion_sangre_21.webp';
 
 // Infusión
-// import infusionImage from '../assets/images/products/infusion_intravenosa.png';
-import infusionImage1 from '../assets/images/products/infusion/infusion_1.jpg';
-import infusionImage2 from '../assets/images/products/infusion/infusion_2.jpg';
-import infusionImage3 from '../assets/images/products/infusion/infusion_3.jpg';
-import infusionImage4 from '../assets/images/products/infusion/infusion_4.jpg';
-import infusionImage5 from '../assets/images/products/infusion/infusion_5.jpg';
-import infusionImage6 from '../assets/images/products/infusion/infusion_6.jpg';
-import infusionImage7 from '../assets/images/products/infusion/infusion_7.jpg';
-import infusionImage8 from '../assets/images/products/infusion/infusion_8.png';
-import infusionImage9 from '../assets/images/products/infusion/infusion_9.png';
-import infusionImage10 from '../assets/images/products/infusion/infusion_10.png';
-import infusionImage11 from '../assets/images/products/infusion/infusion_11.png';
-import infusionImage12 from '../assets/images/products/infusion/infusion_12.jpg';
-import infusionImage13 from '../assets/images/products/infusion/infusion_13.jpg';
-import infusionImage14 from '../assets/images/products/infusion/infusion_14.jpg';
-import infusionImage15 from '../assets/images/products/infusion/infusion_15.jpg';
-import infusionImage16 from '../assets/images/products/infusion/infusion_16.jpg';
-import infusionImage17 from '../assets/images/products/infusion/infusion_17.jpg';
-import infusionImage18 from '../assets/images/products/infusion/infusion_18.jpg';
-import infusionImage19 from '../assets/images/products/infusion/infusion_19.jpg';
-import infusionImage20 from '../assets/images/products/infusion/infusion_20.jpg';
-import infusionImage21 from '../assets/images/products/infusion/infusion_21.jpg';
-import infusionImage22 from '../assets/images/products/infusion/infusion_22.jpg';
-import infusionImage23 from '../assets/images/products/infusion/infusion_23.jpg';
-import infusionImage24 from '../assets/images/products/infusion/infusion_24.png';
-import infusionImage25 from '../assets/images/products/infusion/infusion_25.jpg';
-import infusionImage26 from '../assets/images/products/infusion/infusion_26.png';
-import infusionImage27 from '../assets/images/products/infusion/infusion_27.png';
+// import infusionImage from '../assets/images/products/infusion_intravenosa.webp';
+import infusionImage1 from '../assets/images/products/infusion/infusion_1.webp';
+import infusionImage2 from '../assets/images/products/infusion/infusion_2.webp';
+import infusionImage3 from '../assets/images/products/infusion/infusion_3.webp';
+import infusionImage4 from '../assets/images/products/infusion/infusion_4.webp';
+import infusionImage5 from '../assets/images/products/infusion/infusion_5.webp';
+import infusionImage6 from '../assets/images/products/infusion/infusion_6.webp';
+import infusionImage7 from '../assets/images/products/infusion/infusion_7.webp';
+import infusionImage8 from '../assets/images/products/infusion/infusion_8.webp';
+import infusionImage9 from '../assets/images/products/infusion/infusion_9.webp';
+import infusionImage10 from '../assets/images/products/infusion/infusion_10.webp';
+import infusionImage11 from '../assets/images/products/infusion/infusion_11.webp';
+import infusionImage12 from '../assets/images/products/infusion/infusion_12.webp';
+import infusionImage13 from '../assets/images/products/infusion/infusion_13.webp';
+import infusionImage14 from '../assets/images/products/infusion/infusion_14.webp';
+import infusionImage15 from '../assets/images/products/infusion/infusion_15.webp';
+import infusionImage16 from '../assets/images/products/infusion/infusion_16.webp';
+import infusionImage17 from '../assets/images/products/infusion/infusion_17.webp';
+import infusionImage18 from '../assets/images/products/infusion/infusion_18.webp';
+import infusionImage19 from '../assets/images/products/infusion/infusion_19.webp';
+import infusionImage20 from '../assets/images/products/infusion/infusion_20.webp';
+import infusionImage21 from '../assets/images/products/infusion/infusion_21.webp';
+import infusionImage22 from '../assets/images/products/infusion/infusion_22.webp';
+import infusionImage23 from '../assets/images/products/infusion/infusion_23.webp';
+import infusionImage24 from '../assets/images/products/infusion/infusion_24.webp';
+import infusionImage25 from '../assets/images/products/infusion/infusion_25.webp';
+import infusionImage26 from '../assets/images/products/infusion/infusion_26.webp';
+import infusionImage27 from '../assets/images/products/infusion/infusion_27.webp';
 
 // Cuidado de heridas
-import cuidadoImage from '../assets/images/products/cuidado_heridas.png';
-import cuidadoImage1 from '../assets/images/products/cuidado_heridas/cuidado_heridas_1.png';
-import cuidadoImage2 from '../assets/images/products/cuidado_heridas/cuidado_heridas_2.png';
-import cuidadoImage3 from '../assets/images/products/cuidado_heridas/cuidado_heridas_3.png';
-import cuidadoImage4 from '../assets/images/products/cuidado_heridas/cuidado_heridas_4.png';
-import cuidadoImage5 from '../assets/images/products/cuidado_heridas/cuidado_heridas_5.png';
-import cuidadoImage6 from '../assets/images/products/cuidado_heridas/cuidado_heridas_6.jpg';
-import cuidadoImage7 from '../assets/images/products/cuidado_heridas/cuidado_heridas_7.jpg';
-import cuidadoImage8 from '../assets/images/products/cuidado_heridas/cuidado_heridas_8.jpg';
+import cuidadoImage from '../assets/images/products/cuidado_heridas.webp';
+import cuidadoImage1 from '../assets/images/products/cuidado_heridas/cuidado_heridas_1.webp';
+import cuidadoImage2 from '../assets/images/products/cuidado_heridas/cuidado_heridas_2.webp';
+import cuidadoImage3 from '../assets/images/products/cuidado_heridas/cuidado_heridas_3.webp';
+import cuidadoImage4 from '../assets/images/products/cuidado_heridas/cuidado_heridas_4.webp';
+import cuidadoImage5 from '../assets/images/products/cuidado_heridas/cuidado_heridas_5.webp';
+import cuidadoImage6 from '../assets/images/products/cuidado_heridas/cuidado_heridas_6.webp';
+import cuidadoImage7 from '../assets/images/products/cuidado_heridas/cuidado_heridas_7.webp';
+import cuidadoImage8 from '../assets/images/products/cuidado_heridas/cuidado_heridas_8.webp';
 
 // Urologia
-import urologiaImage from '../assets/images/products/urologia.png';
+import urologiaImage from '../assets/images/products/urologia.webp';
 import urologiaImage1 from '../assets/images/products/urologia/urologia_1.png';
-import urologiaImage2 from '../assets/images/products/urologia/urologia_2.png';
-import urologiaImage3 from '../assets/images/products/urologia/urologia_3.png';
-import urologiaImage4 from '../assets/images/products/urologia/urologia_4.png';
-import urologiaImage5 from '../assets/images/products/urologia/urologia_5.png';
-import urologiaImage6 from '../assets/images/products/urologia/urologia_6.png';
-import urologiaImage7 from '../assets/images/products/urologia/urologia_7.png';
-import urologiaImage8 from '../assets/images/products/urologia/urologia_8.png';
+import urologiaImage2 from '../assets/images/products/urologia/urologia_2.webp';
+import urologiaImage3 from '../assets/images/products/urologia/urologia_3.webp';
+import urologiaImage4 from '../assets/images/products/urologia/urologia_4.webp';
+import urologiaImage5 from '../assets/images/products/urologia/urologia_5.webp';
+import urologiaImage6 from '../assets/images/products/urologia/urologia_6.webp';
+import urologiaImage7 from '../assets/images/products/urologia/urologia_7.webp';
+import urologiaImage8 from '../assets/images/products/urologia/urologia_8.webp';
 
 // Alambre de Guía y Accesorios
-// import alambreImage from '../assets/images/products/alambre_guia.png';
-import accesoriosImage1 from '../assets/images/products/accesories/accesories_1.png';
-import accesoriosImage2 from '../assets/images/products/accesories/accesories_2.png';
-import accesoriosImage3 from '../assets/images/products/accesories/accesories_3.png';
-import accesoriosImage4 from '../assets/images/products/accesories/accesories_4.png';
-import accesoriosImage5 from '../assets/images/products/accesories/accesories_5.png';
-import accesoriosImage6 from '../assets/images/products/accesories/accesories_6.png';
-import accesoriosImage7 from '../assets/images/products/accesories/accesories_7.png';
-import accesoriosImage8 from '../assets/images/products/accesories/accesories_8.png';
-import accesoriosImage9 from '../assets/images/products/accesories/accesories_9.png';
-import accesoriosImage10 from '../assets/images/products/accesories/accesories_10.png';
-import accesoriosImage11 from '../assets/images/products/accesories/accesories_11.png';
-import accesoriosImage12 from '../assets/images/products/accesories/accesories_12.png';
-import accesoriosImage13 from '../assets/images/products/accesories/accesories_13.jpg';
-import accesoriosImage14 from '../assets/images/products/accesories/accesories_14.jpg';
-import accesoriosImage15 from '../assets/images/products/accesories/accesories_15.jpg';
-import accesoriosImage16 from '../assets/images/products/accesories/accesories_16.jpg';
-import accesoriosImage17 from '../assets/images/products/accesories/accesories_17.jpg';
-import accesoriosImage18 from '../assets/images/products/accesories/accesories_18.jpg';
-import accesoriosImage19 from '../assets/images/products/accesories/accesories_19.jpg';
+// import alambreImage from '../assets/images/products/alambre_guia.webp';
+import accesoriosImage1 from '../assets/images/products/accesories/accesories_1.webp';
+import accesoriosImage2 from '../assets/images/products/accesories/accesories_2.webp';
+import accesoriosImage3 from '../assets/images/products/accesories/accesories_3.webp';
+import accesoriosImage4 from '../assets/images/products/accesories/accesories_4.webp';
+import accesoriosImage5 from '../assets/images/products/accesories/accesories_5.webp';
+import accesoriosImage6 from '../assets/images/products/accesories/accesories_6.webp';
+import accesoriosImage7 from '../assets/images/products/accesories/accesories_7.webp';
+import accesoriosImage8 from '../assets/images/products/accesories/accesories_8.webp';
+import accesoriosImage9 from '../assets/images/products/accesories/accesories_9.webp';
+import accesoriosImage10 from '../assets/images/products/accesories/accesories_10.webp';
+import accesoriosImage11 from '../assets/images/products/accesories/accesories_11.webp';
+import accesoriosImage12 from '../assets/images/products/accesories/accesories_12.webp';
+import accesoriosImage13 from '../assets/images/products/accesories/accesories_13.webp';
+import accesoriosImage14 from '../assets/images/products/accesories/accesories_14.webp';
+import accesoriosImage15 from '../assets/images/products/accesories/accesories_15.webp';
+import accesoriosImage16 from '../assets/images/products/accesories/accesories_16.webp';
+import accesoriosImage17 from '../assets/images/products/accesories/accesories_17.webp';
+import accesoriosImage18 from '../assets/images/products/accesories/accesories_18.webp';
+import accesoriosImage19 from '../assets/images/products/accesories/accesories_19.webp';
 
 export interface ProductItem {
     id: number;
@@ -146,24 +147,24 @@ export const products: ProductCategory[] = [
         title: 'Anestesia',
         image: anestesiaImage,
         products: [
-            {
-                id: 101,
-                name: 'Catéter Venoso Central',
-                image: '',
-                description: 'La abrazadera móvil permite el anclaje en el sitio de punción independientemente de la profundidad del catéter, lo que minimiza el trauma y la irritación en el sitio de punción.El marcado de profundidad ayuda a la colocación precisa del catéter venoso central desde la vena subclavia o yugular derecha o izquierda. \n\nLa punta blanda reduce el trauma en el vaso, minimizando la erosión del vaso, el hemotórax y el taponamiento cardíaco.Lumen simple, doble, triple y cuádruple está disponible para su elección.',
-                specificationsTitle: 'Material del catéter TPU(Poliuretano de grado médico)',
-                specifications: [
-                    'Flexibilidad: El catéter venoso central ABLE está hecho de poliuretano superior con excelente elasticidad, el caudal está asegurado en obstrucciones venosas.',
-                    'Suave y elasticidad. Después de la inserción en el cuerpo, se volverá suave del 50% a temperatura corporal(37°C). Formándose de acuerdo con la forma del vaso sanguíneo, reduzca el trauma y anti - parpadeo.',
-                    'Minimice la irritación de los vasos sanguíneos.',
-                    'Interior y exterior del catéter es suave para proteger el vaso sanguíneo, y evitar la trombosis, reducir la resistencia de cateterismo.',
-                    'Marcado del catéter para mostrar la longitud de inserción.',
-                    'El tubo radiopaco y la punta facilitan la ubicación del catéter cuando se visualizan mediante X-Ray',
-                    'El catéter es delgado y suave para minimizar el efecto sobre el flujo sanguíneo.',
-                    'Lumen del catéter espaciado regularmente para mantener la sangre desbloqueada fluyendo.',
-                    'Radiopaco, facilita la visualización rápida bajo X-Ray.'
-                ],
-            },
+            // {
+            //     id: 101,
+            //     name: 'Catéter Venoso Central',
+            //     image: '',
+            //     description: 'La abrazadera móvil permite el anclaje en el sitio de punción independientemente de la profundidad del catéter, lo que minimiza el trauma y la irritación en el sitio de punción.El marcado de profundidad ayuda a la colocación precisa del catéter venoso central desde la vena subclavia o yugular derecha o izquierda. \n\nLa punta blanda reduce el trauma en el vaso, minimizando la erosión del vaso, el hemotórax y el taponamiento cardíaco.Lumen simple, doble, triple y cuádruple está disponible para su elección.',
+            //     specificationsTitle: 'Material del catéter TPU(Poliuretano de grado médico)',
+            //     specifications: [
+            //         'Flexibilidad: El catéter venoso central ABLE está hecho de poliuretano superior con excelente elasticidad, el caudal está asegurado en obstrucciones venosas.',
+            //         'Suave y elasticidad. Después de la inserción en el cuerpo, se volverá suave del 50% a temperatura corporal(37°C). Formándose de acuerdo con la forma del vaso sanguíneo, reduzca el trauma y anti - parpadeo.',
+            //         'Minimice la irritación de los vasos sanguíneos.',
+            //         'Interior y exterior del catéter es suave para proteger el vaso sanguíneo, y evitar la trombosis, reducir la resistencia de cateterismo.',
+            //         'Marcado del catéter para mostrar la longitud de inserción.',
+            //         'El tubo radiopaco y la punta facilitan la ubicación del catéter cuando se visualizan mediante X-Ray',
+            //         'El catéter es delgado y suave para minimizar el efecto sobre el flujo sanguíneo.',
+            //         'Lumen del catéter espaciado regularmente para mantener la sangre desbloqueada fluyendo.',
+            //         'Radiopaco, facilita la visualización rápida bajo X-Ray.'
+            //     ],
+            // },
             {
                 id: 102,
                 name: 'Catéter Venoso Central Antimicrobiano',
@@ -274,7 +275,7 @@ export const products: ProductCategory[] = [
             {
                 id: 107,
                 name: 'PICC (Catéter Central de Inserción Periférica)',
-                image: '',
+                image: anestesiaImage21,
                 description: '',
                 specificationsTitle: 'Características',
                 specifications: [
@@ -487,7 +488,7 @@ export const products: ProductCategory[] = [
             {
                 id: 119,
                 name: 'Tubo de Extensión con Adaptadores de Sitio de Inyección',
-                image: '',
+                image: infusionImage11,
                 description: 'Este dispositivo está diseñado para satisfacer las necesidades de I.V general. Terapia, Anestesia Cardiovascular, UCI&CCU, Recuperación & Oncología. \nMedicamento seguro para infusión IV que incluye la mayoría de los antineoplásicos de alto riesgo o la aspiración de sangre sin riesgo de hemólisis.',
             },
             {
@@ -632,7 +633,7 @@ export const products: ProductCategory[] = [
             {
                 id: 126,
                 name: 'Vestido de Herida de Alginato',
-                image: '',
+                image: cuidadoImage1,
                 description: 'Vestido de Herida de Alginato es un apósito avanzado para heridas fabricado a partir de alginato de sodio extraído de algas marinas naturales. Cuando está en contacto con una herida, el calcio en el apósito se intercambia con el sodio del líquido de la herida, convirtiendo el apósito en un gel. Esto mantiene un ambiente húmedo de curación de heridas que es bueno para la recuperación de heridas exudantes y ayuda con el desbridamiento de heridas desprendidas.\n\nLa propiedad de formación de gel de un apósito de alginato protege contra la invasión bacteriana, una propiedad que hace que el alginato sea un apósito ideal para heridas para una regeneración y curación más rápida de los tejidos en heridas exudadas. La liberación de iones de calcio también puede acelerar el proceso de coagulación de la sangre, lo que ayuda aún más a la curación, lo que lleva a tiempos de tratamiento más cortos.',
                 detailImages: [
                     {
@@ -651,8 +652,8 @@ export const products: ProductCategory[] = [
             },
             {
                 id: 128,
-                name: 'Quitosano',
-                image: '',
+                name: 'Chitosan',
+                image: cuidadoImage4,
                 description: 'El apósito para heridas de quitosano consiste en fibras de quitosano al 100%. El quitosano es un almidón (polímero) natural derivado de las conchas de los crustáceos. Es un apósito suave y altamente absorbente que gelifica cuando está en contacto con exudados de heridas y proporciona un ambiente húmedo para una curación óptima.\nEl apósito para heridas de quitosano tiene la absorbencia y las características gelificantes similares a la carboximetilcelulosa, pero con beneficios adicionales de ser hemostático y bacteriostático son importantes para el proceso de curación de heridas.',
                 detailImages: [
                     {
@@ -898,18 +899,18 @@ export const products: ProductCategory[] = [
                     }
                 ]
             },
-            {
-                id: 143,
-                name: 'Fijación con Alas',
-                image: '',
-                description: '',
-            },
-            {
-                id: 144,
-                name: 'Abrazadera de Diapostiva',
-                image: '',
-                description: '',
-            }
+            // {
+            //     id: 143,
+            //     name: 'Fijación con Alas',
+            //     image: '',
+            //     description: '',
+            // },
+            // {
+            //     id: 144,
+            //     name: 'Abrazadera de Diapostiva',
+            //     image: '',
+            //     description: '',
+            // }
         ]
     }
 ]
