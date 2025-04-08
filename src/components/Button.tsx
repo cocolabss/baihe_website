@@ -5,9 +5,10 @@ interface ButtonProps {
     color: string;
     text: string;
     onClick?: () => void;
+    type?: "button" | "submit";
 }
 
-const Button: React.FC<ButtonProps> = ({ color, text, onClick }) => {
+const Button: React.FC<ButtonProps> = ({ color, text, onClick, type = "button" }) => {
     const hoverColor =
         color === 'bg-green' ? 'hover:bg-red' :
             color === 'bg-red' ? 'hover:bg-green' : 'hover:bg-red';
@@ -18,15 +19,16 @@ const Button: React.FC<ButtonProps> = ({ color, text, onClick }) => {
 
     return (
         <button
+            type={type}
             className={`
-        flex items-center justify-center gap-2 group 
-        ${isExpandableVerMas ? 'w-8 h-8' : 'px-6 py-2'} 
-        ${isExpandableVerMas ? 'hover:w-auto hover:px-6' : ''} 
-        overflow-hidden uppercase text-white 
-        ${fontSize} rounded-full transition-all duration-300 ease-in-out
-        ${color} ${hoverColor}
-        relative
-    `}
+                flex items-center justify-center gap-2 group 
+                ${isExpandableVerMas ? 'w-8 h-8' : 'px-6 py-2'} 
+                ${isExpandableVerMas ? 'hover:w-auto hover:px-6' : ''} 
+                overflow-hidden uppercase text-white 
+                ${fontSize} rounded-full transition-all duration-300 ease-in-out
+                ${color} ${hoverColor}
+                relative
+            `}
             onClick={onClick}
         >
             {!isExpandableVerMas && text}
