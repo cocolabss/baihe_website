@@ -15,7 +15,7 @@ const MainLayout: React.FC<MainLayoutProps> = ({ children }) => {
                 <Header products={products} />
 			</header>
 
-			<main className='mt-[110px]'>
+			<main className='mt-[80px] md:mt-[90px]'>
 				{children}
 			</main>
 

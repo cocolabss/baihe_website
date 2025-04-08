@@ -9,7 +9,7 @@ import ceIcon from '../assets/icons/seal/ce.svg';
 import calendarIcon from '../assets/icons/calendar_icon.svg'
 import locationIcon from '../assets/icons/location_icon.svg'
 
-import peopleImage from '../assets/images/news/people_banner.png';
+import peopleImage from '../assets/images/news/people_banner.webp';
 
 import { news } from '../utils/newsData';
 
@@ -19,9 +19,9 @@ const NewsView: React.FC = () => {
     return (
         <MainLayout>
             <div className="container mx-auto">
-                <section className="relative grid grid-cols-1 md:grid-cols-2 md:gap-24 pl-12 items-center bg-lightgreen">
-                    <div className="absolute top-6 left-12">
-                        <div className="flex items-center text-sm text-darkgray mb-8 space-x-2">
+                <section className="relative grid grid-cols-1 md:grid-cols-2 md:gap-12 lg:gap-24 pl-8 md:pl-16 items-center bg-lightgreen pt-16 md:pt-0">
+                    <div className="absolute top-4 md:top-6 left-8 md:left-16">
+                        <div className="flex items-center text-xs md:text-sm text-darkgray mb-4 md:mb-8 space-x-1 md:space-x-2">
                             <button
                                 onClick={() => navigate('/')}
                                 className="hover:text-red transition-colors hover:underline"
@@ -37,25 +37,27 @@ const NewsView: React.FC = () => {
                             </button>
                         </div>
                     </div>
-                    <div className="space-y-12">
-                        <div className="space-y-6">
-                            <h1 className="text-5xl text-black font-medium">Innovación y excelencia en insumos médicos</h1>
-                            <p className='text-darkgray'>
+                    <div className="space-y-6 md:space-y-12 order-2 md:order-1 my-8 md:my-8 pt-0 md:pt-8 pr-8 md:pr-0">
+                        <div className="space-y-3 md:space-y-6 text-center md:text-start">
+                            <h1 className="text-3xl sm:text-4xl md:text-5xl text-black font-medium">Innovación y excelencia en insumos médicos</h1>
+                            <p className='text-darkgray text-sm md:text-base'>
                                 Innovamos insumos médicos certificados para anestesia, purificación, infusiones y cuidado de heridas, mejorando vidas globalmente.
                             </p>
                         </div>
-                        <Button color="bg-red" text="Contácta con un asesor" />
+                        <div className="flex justify-center md:justify-start">
+                            <Button color="bg-red" text="Contácta con un asesor" />
+                        </div>
                     </div>
-                    <div className="justify-self-end">
-                        <img src={peopleImage} alt="Imagen" className="w-full h-full" />
+                    <div className="justify-self-center md:justify-self-end relative order-1 md:order-2">
+                        <img src={peopleImage} alt="Imagen" loading="lazy" className="w-full h-full" />
                     </div>
                 </section>
 
-                <section className="px-12 pt-12">
+                <section className="px-8 md:px-16 pt-8 md:pt-12">
                     {news.map((news, index) => (
-                        <div key={news.id} className={`mb-24 grid grid-cols-1 md:grid-cols-2 gap-12 items-center ${index % 2 === 0 ? '' : 'md:flex-row-reverse'}`}>
+                        <div key={news.id} className={`mb-12 md:mb-24 grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-12 items-center ${index % 2 === 0 ? '' : 'md:flex-row-reverse'}`}>
                             <div className={`${index % 2 === 0 ? 'md:order-1' : 'md:order-2'}`}>
-                                <img src={news.imageUrl} alt={news.title} className="w-full h-auto shadow-lg" />
+                                <img src={news.imageUrl} alt={news.title} loading="lazy" className="w-full h-auto shadow-lg" />
                             </div>
 
                             <div className={`${index % 2 === 0 ? 'md:order-2' : 'md:order-1'} space-y-4 flex flex-col justify-center items-center`}>
@@ -64,12 +66,12 @@ const NewsView: React.FC = () => {
 
                                 <div className="flex items-center space-x-4">
                                     <span className="text-darkgray flex items-center">
-                                        <img src={locationIcon} alt="Ubicación" className="mr-2 h-5" />
+                                        <img src={locationIcon} alt="Ubicación" loading="lazy" className="mr-2 h-5" />
                                         {news.location}
                                     </span>
                                     <hr className="border-l-2 border-gray-300 h-6" />
                                     <span className="text-darkgray flex items-center">
-                                        <img src={calendarIcon} alt="Ubicación" className="mr-2 h-4" />
+                                        <img src={calendarIcon} alt="Ubicación" loading="lazy" className="mr-2 h-4" />
                                         {news.date}
                                     </span>
                                 </div>
@@ -88,22 +90,21 @@ const NewsView: React.FC = () => {
                     ))}
                 </section>
 
-                <section className="px-12 pt-12 pb-24 grid grid-cols-1 md:grid-cols-2 items-center">
-                    <div className="flex justify-start">
-                        <div className='flex flex-col items-center space-y-4'>
-                            <div className="flex row space-x-6">
-                                <img src={isoIcon} alt="ISO" className="w-12 h-12" />
-                                <img src={ceIcon} alt="CE" className="w-12 h-12" />
-                                <img src={fdaIcon} alt="FDA" className="w-24 h-12" />
+                <section className="py-12 md:py-12 px-8 md:px-16 -mt-2 grid grid-cols-1 md:grid-cols-2 items-center gap-6 md:gap-0">
+                    <div className="flex justify-center md:justify-start order-2 md:order-1">
+                        <div className='flex flex-col items-center space-y-2 md:space-y-4'>
+                            <div className="flex flex-wrap justify-center gap-3 md:gap-6">
+                                <img src={isoIcon} alt="ISO" className="w-8 h-8 md:w-10 md:h-10 lg:w-12 lg:h-12" />
+                                <img src={ceIcon} alt="CE" className="w-8 h-8 md:w-10 md:h-10 lg:w-12 lg:h-12" />
+                                <img src={fdaIcon} alt="FDA" className="w-16 h-8 md:w-20 md:h-10 lg:w-24 lg:h-12" />
                             </div>
                             <Button
                                 color="bg-green"
-                                text="Conoce nuestros productos"
-                                onClick={() => navigate('/products')}
+                                text="Contácta un asesor"
                             />
                         </div>
                     </div>
-                    <p className='text-darkgray text-right'>
+                    <p className='text-darkgray text-sm md:text-base text-center md:text-right order-1 md:order-2'>
                         Desde 1999, Baihe Medical se destaca como uno de los principales fabricantes de insumos médicos desechables.
                     </p>
                 </section>
