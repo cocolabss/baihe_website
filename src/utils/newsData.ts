@@ -1,8 +1,8 @@
-import firstNewImage from '../assets/images/news/first_new.png'
-import secondNewImage from '../assets/images/news/second_new.png'
-import thirdNewImage from '../assets/images/news/third_new.png'
-import fourthNewImage from '../assets/images/news/fourth_new.png'
-import fifthNewImage from '../assets/images/news/fifth_new.png'
+import firstNewImage from '../assets/images/news/first_new.webp'
+import secondNewImage from '../assets/images/news/second_new.webp'
+import thirdNewImage from '../assets/images/news/third_new.webp'
+import fourthNewImage from '../assets/images/news/fourth_new.webp'
+import fifthNewImage from '../assets/images/news/fifth_new.webp'
 
 export const news = [
     {
