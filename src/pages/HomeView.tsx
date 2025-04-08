@@ -66,14 +66,14 @@ const HomeView: React.FC = () => {
     };
 
     useEffect(() => {
-        const observers = productRefs.current.map((element, index) => {
-            if (!element) return null;
+        const observers = productRefs.current
+            .map((element, index) => {
+                if (!element || !products[index]) return null;
 
-            const observer = new IntersectionObserver(([entry]) => {
-                if (entry.isIntersecting) {
-                    const img = element.querySelector('img');
-                    if (img) {
-                        if (!img.src) {
+                const observer = new IntersectionObserver(([entry]) => {
+                    if (entry?.isIntersecting) {
+                        const img = element.querySelector('img');
+                        if (img && products[index]?.image) {
                             img.src = products[index].image;
                             img.onload = () => {
                                 setLoadedImages(prev => {
@@ -85,12 +85,12 @@ const HomeView: React.FC = () => {
                         }
                         observer.disconnect();
                     }
-                }
-            }, { threshold: 0.1 });
+                }, { threshold: 0.1 });
 
-            observer.observe(element);
-            return observer;
-        }).filter(Boolean) as IntersectionObserver[];
+                observer.observe(element);
+                return observer;
+            })
+            .filter((obs): obs is IntersectionObserver => obs !== null);
 
         return () => observers.forEach(obs => obs.disconnect());
     }, []);
@@ -197,7 +197,7 @@ const HomeView: React.FC = () => {
                                     />
                                 </div>
                                 <div className="absolute bottom-4 right-4">
-                                    <Button color="bg-red" text="Ver más" />
+                                    <Button color="bg-red" text="Ver más" onClick={() => navigate(`/products`)} />
                                 </div>
                             </div>
                         ))}
