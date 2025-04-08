@@ -54,6 +54,53 @@ const Footer = () => {
         }
     };
 
+    const [formData, setFormData] = useState({
+        nombre: '',
+        telefono: '',
+        email: '',
+        mensaje: ''
+    });
+
+    const handleInputChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
+        const { id, value } = e.target;
+
+        if (id === 'telefono') {
+            const numericValue = value.replace(/[^0-9]/g, '');
+            setFormData(prev => ({
+                ...prev,
+                [id]: numericValue
+            }));
+        } else {
+            setFormData(prev => ({
+                ...prev,
+                [id]: value
+            }));
+        }
+    };
+
+    const handleSubmit = (e: React.FormEvent) => {
+        e.preventDefault();
+
+        const { nombre, telefono, email, mensaje } = formData;
+        const subject = `Nuevo contacto de ${nombre}`;
+        const body =
+            `Nombre: ${nombre}%0A` +
+            `Teléfono: ${telefono}%0A` +
+            `Email: ${email}%0A` +
+            `Mensaje: ${mensaje}%0A` +
+            `País: ${selectedCountry || 'No seleccionado'}`;
+
+        window.location.href = `mailto:hyh@baihemedical.com?subject=${encodeURIComponent(subject)}&body=${body}`;
+
+        setFormData({
+            nombre: '',
+            telefono: '',
+            email: '',
+            mensaje: ''
+        });
+    };
+
+
     return (
         <footer className="bg-black text-white py-8 px-12">
             <div id='contact' className="container mx-auto">
@@ -79,26 +126,62 @@ const Footer = () => {
                 </div>
                 <div className="grid grid-cols-2 gap-24 mb-12 relative">
                     <div>
-                        <form>
+                        <form onSubmit={handleSubmit}>
                             <div className="mb-2">
                                 <label htmlFor="nombre" className="block mb-1">Nombre</label>
-                                <input type="text" id="nombre" placeholder="Tu nombre completo" className="w-full py-2 px-4 rounded-2xl" />
+                                <input
+                                    type="text"
+                                    id="nombre"
+                                    placeholder="Tu nombre completo"
+                                    className="w-full py-2 px-4 rounded-2xl text-black"
+                                    value={formData.nombre}
+                                    onChange={handleInputChange}
+                                    required
+                                />
                             </div>
                             <div className="mb-2">
                                 <label htmlFor="telefono" className="block mb-1">Número de celular</label>
-                                <input type="number" id="telefono" placeholder="Tu número de celular" className="w-full py-2 px-4 rounded-2xl" />
+                                <input
+                                    type="tel"
+                                    id="telefono"
+                                    placeholder="Tu número de celular"
+                                    className="w-full py-2 px-4 rounded-2xl text-black"
+                                    value={formData.telefono}
+                                    onChange={handleInputChange}
+                                    required
+                                    pattern="[0-9]*"
+                                    inputMode="numeric"
+                                    maxLength={15}
+                                />
                             </div>
                             <div className="mb-2">
                                 <label htmlFor="email" className="block mb-1">Correo electrónico</label>
-                                <input type="email" id="email" placeholder="Tu correo electrónico" className="w-full py-2 px-4 rounded-2xl" />
+                                <input
+                                    type="email"
+                                    id="email"
+                                    placeholder="Tu correo electrónico"
+                                    className="w-full py-2 px-4 rounded-2xl text-black"
+                                    value={formData.email}
+                                    onChange={handleInputChange}
+                                    required
+                                />
                             </div>
                             <div className="mb-4">
                                 <label htmlFor="mensaje" className="block mb-1">Mensaje</label>
-                                <textarea id="mensaje" placeholder="Escribe tu mensaje aquí..." rows={4} className="w-full py-2 px-4 rounded-2xl"></textarea>
+                                <textarea
+                                    id="mensaje"
+                                    placeholder="Escribe tu mensaje aquí..."
+                                    rows={4}
+                                    className="w-full py-2 px-4 rounded-2xl text-black"
+                                    value={formData.mensaje}
+                                    onChange={handleInputChange}
+                                    required
+                                ></textarea>
                             </div>
                             <Button
                                 color="bg-green"
                                 text="Enviar"
+                                type="submit"
                             />
                         </form>
                     </div>
@@ -111,14 +194,21 @@ const Footer = () => {
                                         <h3 className="text-xl text-red mb-2 ml-1">{countryInfo[selectedCountry].name}</h3>
                                     </div>
                                     <div className='flex flex-col border-t-2 py-3 text-sm'>
-                                        <p className='text-darkgray'>Juan Mesa</p>
+                                        <p className='text-darkgray'>{countryInfo[selectedCountry].nameRegional}</p>
                                         <div className='flex row items-center mt-2 mb-3'>
                                             <img src={emailRedIcon} alt="Correo principal" className="w-4 h-4" />
-                                            <p className='text-red ml-2'>juan@bahihemedical.com</p>
+                                            <p className='text-red ml-2'>{countryInfo[selectedCountry].emailRegional}</p>
                                         </div>
                                         <Button
                                             color="bg-green"
                                             text="Contactar vía email"
+                                            onClick={() => {
+                                                const email = countryInfo[selectedCountry].emailRegional;
+                                                const subject = `Consulta desde la página web - ${countryInfo[selectedCountry].name}`;
+                                                const body = `Hola,\n\nEstoy interesado(a) en recibir más información sobre sus productos o servicios en ${countryInfo[selectedCountry].name}.\n\nGracias.`;
+
+                                                window.location.href = `mailto:${email}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+                                            }}
                                         />
                                     </div>
                                     <div className='flex flex-col border-t-2 py-3 text-sm'>
@@ -126,13 +216,6 @@ const Footer = () => {
                                         <div className='flex row items-center mt-1'>
                                             <img src={emailGreenIcon} alt="Correo principal" className="w-4 h-4" />
                                             <p className='text-green ml-2'>hyh@baihemedical.com</p>
-                                        </div>
-                                    </div>
-                                    <div className='flex flex-col border-t-2 py-3 text-sm'>
-                                        <p className='text-darkgray'>Gerencia Regional Colombia, Ecuador, Chile, Venezuela, Perú</p>
-                                        <div className='flex row items-center mt-1'>
-                                            <img src={emailGreenIcon} alt="Correo principal" className="w-4 h-4" />
-                                            <p className='text-green ml-2'>juan@baihemedical.com</p>
                                         </div>
                                     </div>
                                 </div>
@@ -222,19 +305,19 @@ const Footer = () => {
                         <div className="border-t border-white flex justify-evenly items-center pt-6">
                             <a
                                 href="/"
-                                className={`hover:text-red ${location.pathname === '/' ? 'text-red' : ''}`}
+                                className={`hover:text-red hover:underline transition-colors duration-300 ${location.pathname === '/' ? 'text-red' : ''}`}
                             >
                                 HOME
                             </a>
                             <a
                                 href="/products"
-                                className={`hover:text-red ${location.pathname === '/products' ? 'text-red' : ''}`}
+                                className={`hover:text-red hover:underline transition-colors duration-300 ${location.pathname === '/products' ? 'text-red' : ''}`}
                             >
                                 CATÁLOGO
                             </a>
                             <a
                                 href="/news"
-                                className={`hover:text-red ${location.pathname === '/news' ? 'text-red' : ''}`}
+                                className={`hover:text-red hover:underline transition-colors duration-300 ${location.pathname === '/news' ? 'text-red' : ''}`}
                             >
                                 NOTICIAS
                             </a>
