@@ -50,16 +50,16 @@ const Header: React.FC<HeaderProps> = ({ products = [] }) => {
                 <nav className="flex items-center space-x-24">
                     <ul className="flex space-x-24 text-black">
                         <li>
-                            <a href="/" className={location.pathname === "/" ? "text-red" : ""}>HOME</a>
+                            <a href="/" className={`hover:text-red hover:underline transition-colors duration-300 ${location.pathname === "/" ? "text-red" : ""}`}>HOME</a>
                         </li>
                         <li>
-                            <a href="/products" className={location.pathname === "/products" ? "text-red" : ""}>CATÁLOGO</a>
+                            <a href="/products" className={`hover:text-red hover:underline transition-colors duration-300 ${location.pathname === "/products" ? "text-red" : ""}`}>CATÁLOGO</a>
                         </li>
                         <li>
-                            <a href="/news" className={location.pathname === "/news" ? "text-red" : ""}>NOTICIAS</a>
+                            <a href="/news" className={`hover:text-red hover:underline transition-colors duration-300 ${location.pathname === "/news" ? "text-red" : ""}`}>NOTICIAS</a>
                         </li>
                         <li>
-                            <a href="#contact" className={location.pathname === "/contact" ? "text-red" : ""}>CONTACTO</a>
+                            <a href="#contact" className={`hover:text-red hover:underline transition-colors duration-300 ${location.pathname === "/contact" ? "text-red" : ""}`}>CONTACTO</a>
                         </li>
                     </ul>
                     <div className="relative flex items-center" ref={searchRef} onBlur={handleBlur}>
@@ -86,13 +86,14 @@ const Header: React.FC<HeaderProps> = ({ products = [] }) => {
                             onClick={handleSearchClick}
                         />
 
-                        {query && (
+                        {searchOpen && query && (
                             <ul className="absolute right-0 top-12 bg-white border border-gray-300 rounded-md mt-2 max-h-60 overflow-y-auto w-64 shadow-lg">
                                 {filteredProducts.map(product => (
                                     <li
                                         key={product.id}
                                         className="p-2 hover:bg-gray-200 cursor-pointer"
-                                        onClick={() => navigate(`/product/${product.id}`)}
+                                        onClick={() => navigate(`/products/${product.id}`)}
+                                        onMouseDown={(e) => e.preventDefault()}
                                     >
                                         <span className="text-gray-500">{product.categoryName} &gt; </span>
                                         <span>{product.name}</span>
