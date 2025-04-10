@@ -17,6 +17,10 @@ import StepImage1 from '../assets/images/timeline/step_1.svg';
 import StepImage2 from '../assets/images/timeline/step_2.svg';
 import StepImage3 from '../assets/images/timeline/step_3.svg';
 import StepImage4 from '../assets/images/timeline/step_4.svg';
+import StepImage5 from '../assets/images/timeline/step_5.svg';
+import StepImage6 from '../assets/images/timeline/step_6.svg';
+import StepImage7 from '../assets/images/timeline/step_7.svg';
+import StepImage8 from '../assets/images/timeline/step_8.svg';
 
 import bannerRedImage1 from '../assets/images/banners/red/banner_1.webp';
 import bannerRedImage2 from '../assets/images/banners/red/banner_2.webp';
@@ -182,14 +186,14 @@ const HomeView: React.FC = () => {
                         <strong>Expertos</strong> en dispositivos médicos desechables para uso en anestesia, purificación de sangre, infusión y cuidado de heridas.
                     </p>
 
-                    <div className="grid grid-cols-1 md:grid-cols-2 gap-x-8 lg:gap-x-24 gap-y-8 md:gap-y-16">
+                    <div className="grid grid-cols-1 md:grid-cols-2 gap-x-8 lg:gap-x-24 gap-y-8 md:gap-y-160">
                         {products.map((product, index) => (
                             <div
                                 key={product.id}
                                 ref={el => setProductRef(el, index)}
                                 className="relative"
                             >
-                                <p className='mb-2 md:mb-3 text-darkgray text-sm md:text-base'>{product.title}</p>
+                                <p className='mb-2 md:mb-3 text-darkgray text-center md:text-start text-sm md:text-base'>{product.title}</p>
                                 <div className="relative w-full h-64 sm:h-80 md:h-96 rounded-lg overflow-hidden">
                                     {!loadedImages[index] && (
                                         <div className="absolute inset-0 bg-gray-200 animate-pulse rounded-lg">
@@ -244,7 +248,7 @@ const HomeView: React.FC = () => {
                         animate={controls1}
                         className="flex flex-col md:flex-row justify-between"
                     >
-                        <div className="relative w-full h-[40px] md:h-[88px] mb-4 md:mb-0">
+                        <div className="relative w-full h-[40px] md:h-[88px] mb-4 md:mb-0 hidden md:block">
                             <motion.div
                                 variants={fadeIn}
                                 className="absolute top-4 left-0 md:left-28 w-full md:w-[700px] h-[4px] bg-[#6fb71e]"
@@ -275,7 +279,8 @@ const HomeView: React.FC = () => {
                             variants={slideInFromLeft}
                             className='flex flex-col md:flex-row w-full md:w-2/3 space-y-4 md:space-y-0 md:space-x-8 justify-center mt-4'
                         >
-                            <img src={StepImage1} alt="Estabilidad" loading="lazy" className='h-32 md:h-40' />
+                            <img src={StepImage1} alt="Estabilidad" loading="lazy" className='h-40 hidden md:block' />
+                            <img src={StepImage5} alt="Estabilidad" loading="lazy" className='h-32 md:hidden' />
                             <div className="flex flex-col space-y-2 md:space-y-4 justify-center text-center md:text-left">
                                 <h2 className="text-2xl md:text-3xl text-black">Estabilidad</h2>
                                 <p className='text-darkgray text-sm md:text-base'>
@@ -283,14 +288,14 @@ const HomeView: React.FC = () => {
                                 </p>
                             </div>
                         </motion.div>
-                        <div className="relative w-full md:w-[188px] h-[40px] md:h-[88px]">
+                        <div className="relative w-[188px] h-[88px] hidden md:block">
                             <motion.div
                                 variants={fadeIn}
-                                className="absolute top-4 right-0 md:right-28 w-full md:w-[800px] h-[4px] bg-green"
+                                className="absolute top-12 right-28 w-[800px] h-[4px] bg-green"
                             />
                             <motion.div
                                 variants={fadeIn}
-                                className="absolute top-4 right-0 md:right-28 w-[4px] h-[80px] md:h-[160px] bg-green"
+                                className="absolute top-12 right-28 w-[4px] h-[140px] bg-green"
                             />
                         </div>
                     </motion.div>
@@ -301,27 +306,28 @@ const HomeView: React.FC = () => {
                         animate={controls3}
                         className="flex flex-col md:flex-row justify-between"
                     >
-                        <div className="relative w-full md:w-[188px] h-[40px] md:h-[88px] mb-4 md:mb-0">
+                        <div className="relative w-[188px] h-[88px] hidden md:block">
                             <motion.div
                                 variants={fadeIn}
-                                className="absolute top-4 left-0 md:left-28 w-full md:w-[800px] h-[4px] bg-green"
+                                className="absolute top-10 left-28 w-[800px] h-[4px] bg-green"
                             />
                             <motion.div
                                 variants={fadeIn}
-                                className="absolute top-4 left-0 md:left-28 w-[4px] h-[80px] md:h-[160px] bg-green"
+                                className="absolute top-10 left-28 w-[4px] h-[140px] bg-green"
                             />
                         </div>
                         <motion.div
                             variants={slideInFromRight}
-                            className='flex flex-col md:flex-row w-full md:w-2/3 space-y-4 md:space-y-0 md:space-x-8 justify-center'
+                            className='flex flex-col md:flex-row w-full md:w-2/3 space-y-4 md:space-y-0 md:space-x-8 justify-center mt-4 md:mt-0'
                         >
+                            <img src={StepImage6} alt="Vanguardia" loading="lazy" className='h-32 md:hidden' />
                             <div className="flex flex-col space-y-2 md:space-y-4 justify-center text-center md:text-end">
                                 <h2 className="text-2xl md:text-3xl text-black">Vanguardia</h2>
                                 <p className='text-darkgray text-sm md:text-base'>
                                     Nos destacamos por nuestra eficiencia, una sólida cultura empresarial y beneficios excepcionales. Nuestra competitividad se fundamenta en procesos productivos eficientes y una mentalidad empresarial moderna.
                                 </p>
                             </div>
-                            <img src={StepImage2} alt="Vanguardia" loading="lazy" className='h-32 md:h-40' />
+                            <img src={StepImage2} alt="Vanguardia" loading="lazy" className='h-40 hidden md:block' />
                         </motion.div>
                     </motion.div>
 
@@ -335,7 +341,8 @@ const HomeView: React.FC = () => {
                             variants={slideInFromLeft}
                             className='flex flex-col md:flex-row w-full md:w-2/3 space-y-4 md:space-y-0 md:space-x-8 justify-center mt-4 md:mt-0'
                         >
-                            <img src={StepImage3} alt="Innovación" loading="lazy" className='h-32 md:h-40' />
+                            <img src={StepImage3} alt="Innovación" loading="lazy" className='h-40 hidden md:block' />
+                            <img src={StepImage7} alt="Innovación" loading="lazy" className='h-32 md:hidden' />
                             <div className="flex flex-col space-y-2 md:space-y-4 justify-center text-center md:text-left">
                                 <h2 className="text-2xl md:text-3xl text-black">Innovación</h2>
                                 <p className='text-darkgray text-sm md:text-base'>
@@ -343,14 +350,14 @@ const HomeView: React.FC = () => {
                                 </p>
                             </div>
                         </motion.div>
-                        <div className="relative w-full md:w-[188px] h-[40px] md:h-[88px]">
+                        <div className="relative w-[188px] h-[88px] hidden md:block">
                             <motion.div
                                 variants={fadeIn}
-                                className="absolute top-4 right-0 md:right-28 w-full md:w-[800px] h-[4px] bg-green"
+                                className="absolute top-8 right-28 w-[800px] h-[4px] bg-green"
                             />
                             <motion.div
                                 variants={fadeIn}
-                                className="absolute top-4 right-0 md:right-28 w-[4px] h-[80px] md:h-[160px] bg-green"
+                                className="absolute top-8 right-28 w-[4px] h-[180px] bg-green"
                             />
                         </div>
                     </motion.div>
@@ -361,27 +368,28 @@ const HomeView: React.FC = () => {
                         animate={controls5}
                         className="flex flex-col md:flex-row justify-between"
                     >
-                        <div className="relative w-full md:w-[188px] h-[40px] md:h-[88px] mb-4 md:mb-0">
+                        <div className="relative w-[188px] h-[88px] mt-4 hidden md:block">
                             <motion.div
                                 variants={fadeIn}
-                                className="absolute top-4 left-0 md:left-28 w-full md:w-[650px] h-[4px] bg-green"
+                                className="absolute top-2 left-28 w-[750px] h-[4px] bg-green"
                             />
                             <motion.div
                                 variants={fadeIn}
-                                className="absolute top-4 left-0 md:left-28 w-[4px] h-[120px] md:h-[225px] bg-green"
+                                className="absolute top-2 left-28 w-[4px] h-[200px] bg-green"
                             />
                         </div>
                         <motion.div
                             variants={slideInFromRight}
-                            className='flex flex-col md:flex-row w-full md:w-2/3 space-y-4 md:space-y-0 md:space-x-8 justify-center'
+                            className='flex flex-col md:flex-row w-full md:w-2/3 space-y-4 md:space-y-0 md:space-x-8 justify-center mt-4 md:mt-0'
                         >
+                            <img src={StepImage8} alt="Ganancia mutua" loading="lazy" className='h-24 md:hidden' />
                             <div className="flex flex-col space-y-2 md:space-y-4 justify-center text-center md:text-end">
                                 <h2 className="text-2xl md:text-3xl text-black">Ganancia mutua</h2>
                                 <p className='text-darkgray text-sm md:text-base'>
                                     Nos enfocamos en generar valor para nuestros clientes, promoviendo un desarrollo conjunto y una colaboración que nos permita alcanzar el éxito de manera compartida.
                                 </p>
                             </div>
-                            <img src={StepImage4} alt="Ganancia mutua" loading="lazy" className='h-32 md:h-40' />
+                            <img src={StepImage4} alt="Ganancia mutua" loading="lazy" className='h-32 hidden md:block' />
                         </motion.div>
                     </motion.div>
                 </section>

@@ -40,38 +40,38 @@ const ProductDetailView: React.FC = () => {
 
     return (
         <MainLayout>
-            <section className="p-12">
-                <div className="flex items-center text-sm text-darkgray mb-8 space-x-2">
+            <section className="px-6 pb-12 md:p-12 container mx-auto">
+                <div className="flex items-center text-sm text-darkgray mb-8 flex-wrap gap-x-2">
                     <button
                         onClick={() => navigate('/')}
-                        className="hover:text-red transition-colors hover:underline"
+                        className="hover:text-red transition-colors hover:underline whitespace-nowrap"
                     >
                         Home
                     </button>
                     <span>/</span>
                     <button
                         onClick={() => navigate('/products')}
-                        className="hover:text-red transition-colors hover:underline"
+                        className="hover:text-red transition-colors hover:underline whitespace-nowrap"
                     >
                         Catálogo
                     </button>
                     <span>/</span>
                     <button
                         onClick={() => navigate(-1)}
-                        className="hover:text-red transition-colors hover:underline"
+                        className="hover:text-red transition-colors hover:underline whitespace-nowrap"
                     >
                         {categoryName}
                     </button>
                     <span>/</span>
-                    <span className="text-red">{product.name}</span>
+                    <span className="text-red whitespace-nowrap">{product.name}</span>
                 </div>
 
                 <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
                     <div className="space-y-6">
                         <div className="space-y-2">
-                            <h1 className="text-3xl font-medium text-red">{product.name}</h1>
+                            <h1 className="text-3xl font-medium text-center md:text-start text-red">{product.name}</h1>
                             {product.description ? (
-                                <div className="prose max-w-none text-darkgray text-justify">
+                                <div className="prose max-w-none text-darkgray text-center md:text-justify">
                                     {product.description.split('\n').map((line, i) => (
                                         <React.Fragment key={i}>
                                             {line}
@@ -82,6 +82,39 @@ const ProductDetailView: React.FC = () => {
                             ) : (
                                 <div className="prose max-w-none text-darkgray text-justify pb-4">
                                     <span className="italic">No hay información disponible sobre este producto</span>
+                                </div>
+                            )}
+                        </div>
+
+                        <div className="space-y-12 md:hidden">
+                            {product.image && (
+                                <div className="shadow-[-5px_5px_5px_0px_rgba(0,0,0,0.2)] overflow-hidden">
+                                    <img
+                                        src={product.image}
+                                        alt={product.name}
+                                        className="w-full h-auto object-cover"
+                                    />
+                                </div>
+                            )}
+
+                            {product.detailImages && product.detailImages.length > 0 && (
+                                <div className="grid grid-cols-2 gap-6">
+                                    {product.detailImages.map((detail, index) => (
+                                        detail.image && (
+                                            <div key={index} className="shadow-[-5px_5px_5px_0px_rgba(0,0,0,0.2)] overflow-hidden">
+                                                <img
+                                                    src={detail.image}
+                                                    alt={`Detalle ${index + 1}`}
+                                                    className="w-full h-52 object-cover"
+                                                />
+                                                {detail.subtitle && (
+                                                    <p className="text-right text-sm text-darkgray p-2">
+                                                        {detail.subtitle}
+                                                    </p>
+                                                )}
+                                            </div>
+                                        )
+                                    ))}
                                 </div>
                             )}
                         </div>
@@ -98,7 +131,7 @@ const ProductDetailView: React.FC = () => {
                         )}
                     </div>
 
-                    <div className="space-y-12">
+                    <div className="space-y-12 hidden md:block">
                         {product.image && (
                             <div className="shadow-[-5px_5px_5px_0px_rgba(0,0,0,0.2)] overflow-hidden">
                                 <img

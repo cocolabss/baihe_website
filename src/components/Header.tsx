@@ -52,10 +52,29 @@ const Header: React.FC<HeaderProps> = ({ products = [] }) => {
 
     return (
         <header className="fixed top-0 left-0 w-full bg-white shadow-lg z-50">
-            <div className="container mx-auto flex justify-between items-center py-2 px-4 md:px-12 relative">
-                <a onClick={() => navigate("/")} className="cursor-pointer">
+            <div className="container mx-auto flex justify-between items-center py-4 px-4 md:py-2 md:px-12 relative">
+                <div className="md:hidden flex items-center">
+                    <button onClick={toggleMobileMenu} className="text-red focus:outline-none">
+                        {mobileMenuOpen ? (
+                            <FiX className="h-8 w-8" />
+                        ) : (
+                            <FiMenu className="h-8 w-8" />
+                        )}
+                    </button>
+                </div>
+
+                <a onClick={() => navigate("/")} className="cursor-pointer absolute left-1/2 transform -translate-x-1/2 md:static md:left-auto md:transform-none">
                     <img src={logoImage} alt="Logo rojo" className="h-16 w-36 md:h-20 md:w-44" />
                 </a>
+
+                <div className="md:hidden flex items-center">
+                    <img
+                        src={searchIcon}
+                        alt="Search"
+                        className="h-6 w-6 cursor-pointer"
+                        onClick={handleSearchClick}
+                    />
+                </div>
 
                 {searchOpen && (
                     <motion.div
@@ -94,22 +113,6 @@ const Header: React.FC<HeaderProps> = ({ products = [] }) => {
                         </div>
                     </motion.div>
                 )}
-
-                <div className="md:hidden flex items-center space-x-4">
-                    <img
-                        src={searchIcon}
-                        alt="Search"
-                        className="h-6 w-6 cursor-pointer"
-                        onClick={handleSearchClick}
-                    />
-                    <button onClick={toggleMobileMenu} className="text-red focus:outline-none">
-                        {mobileMenuOpen ? (
-                            <FiX className="h-8 w-8" />
-                        ) : (
-                            <FiMenu className="h-8 w-8" />
-                        )}
-                    </button>
-                </div>
 
                 <nav className="hidden md:flex items-center space-x-6 lg:space-x-24">
                     <ul className="flex space-x-6 lg:space-x-24 text-black">
