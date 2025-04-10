@@ -115,8 +115,8 @@ const ProductsView: React.FC = () => {
     return (
         <MainLayout>
             <div className="container mx-auto">
-                <section className="relative grid grid-cols-1 md:grid-cols-2 md:gap-12 lg:gap-24 pl-8 md:pl-16 items-center bg-lightgreen pt-16 md:pt-0">
-                    <div className="absolute top-4 md:top-6 left-8 md:left-16">
+                <section className="relative grid grid-cols-1 md:grid-cols-2 md:gap-12 lg:gap-24 pl-8 md:pl-16 items-center bg-lightgreen pt-0">
+                    <div className="absolute top-4 md:top-6 left-8 md:left-16 z-20">
                         <div className="flex items-center text-xs md:text-sm text-darkgray mb-4 md:mb-8 space-x-1 md:space-x-2">
                             <button
                                 onClick={() => navigate('/')}
@@ -144,7 +144,7 @@ const ProductsView: React.FC = () => {
                         </div>
                         <div className="flex justify-center md:justify-start">
                             <Button
-                                color="bg-red"
+                                color="bg-green"
                                 text="Contácta con un asesor"
                             />
                         </div>

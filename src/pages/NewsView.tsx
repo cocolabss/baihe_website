@@ -10,6 +10,7 @@ import calendarIcon from '../assets/icons/calendar_icon.svg'
 import locationIcon from '../assets/icons/location_icon.svg'
 
 import peopleImage from '../assets/images/news/people_banner.webp';
+import peopleImageMobile from '../assets/images/news/people_banner_mobile.webp';
 
 import { news } from '../utils/newsData';
 
@@ -19,9 +20,9 @@ const NewsView: React.FC = () => {
     return (
         <MainLayout>
             <div className="container mx-auto">
-                <section className="relative grid grid-cols-1 md:grid-cols-2 md:gap-12 lg:gap-24 pl-8 md:pl-16 items-center bg-lightgreen pt-16 md:pt-0">
-                    <div className="absolute top-4 md:top-6 left-8 md:left-16">
-                        <div className="flex items-center text-xs md:text-sm text-darkgray mb-4 md:mb-8 space-x-1 md:space-x-2">
+                <section className="relative grid grid-cols-1 md:grid-cols-2 md:gap-12 lg:gap-24 items-center bg-lightgreen pt-0">
+                    <div className="absolute top-4 md:top-6 left-8 md:left-16 z-20">
+                        <div className="flex items-center text-xs md:text-sm text-white md:text-darkgray mb-4 md:mb-8 space-x-1 md:space-x-2">
                             <button
                                 onClick={() => navigate('/')}
                                 className="hover:text-red transition-colors hover:underline"
@@ -37,7 +38,7 @@ const NewsView: React.FC = () => {
                             </button>
                         </div>
                     </div>
-                    <div className="space-y-6 md:space-y-12 order-2 md:order-1 my-8 md:my-8 pt-0 md:pt-8 pr-8 md:pr-0">
+                    <div className="space-y-6 md:space-y-12 order-2 md:order-1 my-8 md:my-8 pt-0 md:pt-8 pr-8 md:pr-0 pl-8 md:pl-16">
                         <div className="space-y-3 md:space-y-6 text-center md:text-start">
                             <h1 className="text-3xl sm:text-4xl md:text-5xl text-black font-medium">Innovación y excelencia en insumos médicos</h1>
                             <p className='text-darkgray text-sm md:text-base'>
@@ -49,7 +50,8 @@ const NewsView: React.FC = () => {
                         </div>
                     </div>
                     <div className="justify-self-center md:justify-self-end relative order-1 md:order-2">
-                        <img src={peopleImage} alt="Imagen" loading="lazy" className="w-full h-full" />
+                        <img src={peopleImage} alt="Imagen" loading="lazy" className="w-full h-full hidden md:block" />
+                        <img src={peopleImageMobile} alt="Imagen" loading='lazy' className='w-full h-full md:hidden' />
                     </div>
                 </section>
 
