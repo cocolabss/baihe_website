@@ -10,6 +10,7 @@ import fdaIcon from '../../assets/icons/seal/fda.svg';
 import ceIcon from '../../assets/icons/seal/ce.svg';
 
 import productsImage from '../../assets/images/products/products_banner.webp';
+import productsImageMobile from '../../assets/images/products/products_banner_mobile.webp';
 
 import { products, ProductCategory, ProductItem } from '../../utils/productsData';
 
@@ -115,9 +116,9 @@ const ProductsView: React.FC = () => {
     return (
         <MainLayout>
             <div className="container mx-auto">
-                <section className="relative grid grid-cols-1 md:grid-cols-2 md:gap-12 lg:gap-24 pl-8 md:pl-16 items-center bg-lightgreen pt-0">
+                <section className="relative grid grid-cols-1 md:grid-cols-2 md:gap-12 lg:gap-24 md:pl-16 items-center bg-lightgreen pt-0">
                     <div className="absolute top-4 md:top-6 left-8 md:left-16 z-20">
-                        <div className="flex items-center text-xs md:text-sm text-darkgray mb-4 md:mb-8 space-x-1 md:space-x-2">
+                        <div className="flex items-center text-xs md:text-sm text-white md:text-darkgray mb-4 md:mb-8 space-x-1 md:space-x-2">
                             <button
                                 onClick={() => navigate('/')}
                                 className="hover:text-red transition-colors hover:underline"
@@ -162,7 +163,15 @@ const ProductsView: React.FC = () => {
                             src={productsImage}
                             alt="Productos médicos"
                             className={`w-full h-auto max-h-[300px] md:max-h-full ${bannerLoaded ? 'opacity-100' : 'opacity-0'
-                                } transition-opacity duration-300`}
+                                } transition-opacity duration-300 hidden md:block`}
+                            loading="lazy"
+                        />
+                        <img
+                            ref={bannerRef}
+                            src={productsImageMobile}
+                            alt="Productos médicos"
+                            className={`w-full h-auto max-h-[300px] md:max-h-full ${bannerLoaded ? 'opacity-100' : 'opacity-0'
+                                } transition-opacity duration-300 md:hidden`}
                             loading="lazy"
                         />
                     </div>
