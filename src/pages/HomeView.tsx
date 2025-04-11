@@ -22,6 +22,7 @@ import StepImage6 from '../assets/images/timeline/step_6.svg';
 import StepImage7 from '../assets/images/timeline/step_7.svg';
 import StepImage8 from '../assets/images/timeline/step_8.svg';
 
+import bannerImage from '../assets/images/banners/home_banner_second.webp';
 import bannerRedImage1 from '../assets/images/banners/red/banner_1.webp';
 import bannerRedImage2 from '../assets/images/banners/red/banner_2.webp';
 import bannerRedImage3 from '../assets/images/banners/red/banner_3.webp';
@@ -436,20 +437,30 @@ const HomeView: React.FC = () => {
                     </div>
                 </section>
 
-                <section className='px-8 md:px-16 pt-12 pb-24 md:py-24 mt-32 md:mt-32 flex justify-center md:justify-end items-center'>
-                    <div className="w-full md:w-3/4 lg:w-1/2 text-center md:text-right">
-                        <h2 className="text-2xl md:text-3xl mb-2 text-green font-medium">Compromiso con el futuro</h2>
-                        <p className="mb-8 md:mb-12 text-darkgray text-sm md:text-base">
-                            En Baihe Medical, nos mantenemos fieles a nuestros valores fundamentales: credibilidad, responsabilidad por la vida, búsqueda de la excelencia y satisfacción de nuestros clientes.
-                            <br /><br />
-                            Seguiremos enfocados en el diseño, desarrollo, producción y comercialización de dispositivos médicos desechables, siempre con un firme compromiso hacia el bienestar de los pacientes. Nuestro objetivo es consolidarnos como el proveedor líder de soluciones integrales en consumibles médicos desechables a nivel mundial, impulsando la innovación y la calidad en cada uno de nuestros productos.
-                        </p>
-                        <div className="flex justify-center md:justify-end">
-                            <Button
-                                color="bg-green"
-                                text="Conoce nuestros productos"
-                                onClick={() => navigate('/products')}
+                <section className='px-8 md:px-16 pt-12 pb-24 md:py-24 mt-32 md:mt-32'>
+                    <div className="container mx-auto flex flex-col md:flex-row items-center">
+                        <div className="w-full md:w-1/2 mb-8 md:mb-0 md:pr-8 order-1 md:order-none">
+                            <img
+                                src={bannerImage}
+                                alt="Compromiso con el futuro"
+                                className="w-full h-auto rounded-lg"
                             />
+                        </div>
+
+                        <div className="w-full md:w-1/2 text-center md:text-right order-2 md:order-none">
+                            <h2 className="text-2xl md:text-3xl mb-2 text-green font-medium">Compromiso con el futuro</h2>
+                            <p className="mb-8 md:mb-12 text-darkgray text-sm md:text-base">
+                                En Baihe Medical, nos mantenemos fieles a nuestros valores fundamentales: credibilidad, responsabilidad por la vida, búsqueda de la excelencia y satisfacción de nuestros clientes.
+                                <br /><br />
+                                Seguiremos enfocados en el diseño, desarrollo, producción y comercialización de dispositivos médicos desechables, siempre con un firme compromiso hacia el bienestar de los pacientes. Nuestro objetivo es consolidarnos como el proveedor líder de soluciones integrales en consumibles médicos desechables a nivel mundial, impulsando la innovación y la calidad en cada uno de nuestros productos.
+                            </p>
+                            <div className="flex justify-center md:justify-end">
+                                <Button
+                                    color="bg-green"
+                                    text="Conoce nuestros productos"
+                                    onClick={() => navigate('/products')}
+                                />
+                            </div>
                         </div>
                     </div>
                 </section>
