@@ -89,7 +89,7 @@ import cuidadoImage8 from '../assets/images/products/cuidado_heridas/cuidado_her
 
 // Urologia
 import urologiaImage from '../assets/images/products/urologia.webp';
-import urologiaImage1 from '../assets/images/products/urologia/urologia_1.png';
+import urologiaImage1 from '../assets/images/products/urologia/urologia_1.webp';
 import urologiaImage2 from '../assets/images/products/urologia/urologia_2.webp';
 import urologiaImage3 from '../assets/images/products/urologia/urologia_3.webp';
 import urologiaImage4 from '../assets/images/products/urologia/urologia_4.webp';

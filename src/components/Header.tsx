@@ -120,13 +120,13 @@ const Header: React.FC<HeaderProps> = ({ products = [] }) => {
                             <a href="/" className={`hover:text-red hover:underline transition-colors duration-300 ${location.pathname === "/" ? "text-red underline" : ""}`}>HOME</a>
                         </li>
                         <li>
-                            <a href="/products" className={`hover:text-red hover:underline transition-colors duration-300 ${location.pathname === "/products" ? "text-red underline" : ""}`}>CATÁLOGO</a>
+                            <a href="/products" className={`hover:text-red hover:underline transition-colors duration-300 ${location.pathname === "/products/" ? "text-red underline" : ""}`}>CATÁLOGO</a>
                         </li>
                         <li>
-                            <a href="/news" className={`hover:text-red hover:underline transition-colors duration-300 ${location.pathname === "/news" ? "text-red underline" : ""}`}>NOTICIAS</a>
+                            <a href="/news" className={`hover:text-red hover:underline transition-colors duration-300 ${location.pathname === "/news/" ? "text-red underline" : ""}`}>NOTICIAS</a>
                         </li>
                         <li>
-                            <a href="#contact" className={`hover:text-red hover:underline transition-colors duration-300 ${location.pathname === "/contact" ? "text-red underline" : ""}`}>CONTACTO</a>
+                            <a href="#contact" className={`hover:text-red hover:underline transition-colors duration-300 ${location.pathname === "/contact/" ? "text-red underline" : ""}`}>CONTACTO</a>
                         </li>
                     </ul>
                     <div className="relative flex items-center" ref={searchRef} onBlur={handleBlur}>
