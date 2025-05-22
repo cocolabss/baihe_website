@@ -23,15 +23,15 @@ import StepImage7 from '../assets/images/timeline/step_7.svg';
 import StepImage8 from '../assets/images/timeline/step_8.svg';
 
 import bannerImage from '../assets/images/banners/home_banner_second.webp';
-import bannerRedImage1 from '../assets/images/banners/red/banner_1.webp';
-import bannerRedImage2 from '../assets/images/banners/red/banner_2.webp';
-import bannerRedImage3 from '../assets/images/banners/red/banner_3.webp';
-import bannerBlackImage1 from '../assets/images/banners/black/banner_1.webp';
-import bannerBlackImage2 from '../assets/images/banners/black/banner_2.webp';
-import bannerBlackImage3 from '../assets/images/banners/black/banner_3.webp';
-import bannerGreenImage1 from '../assets/images/banners/green/banner_1.webp';
-import bannerGreenImage2 from '../assets/images/banners/green/banner_2.webp';
-import bannerGreenImage3 from '../assets/images/banners/green/banner_3.webp';
+import bannerRedImage1 from '../assets/images/banners/red/banner_1.png';
+import bannerRedImage2 from '../assets/images/banners/red/banner_2.png';
+import bannerRedImage3 from '../assets/images/banners/red/banner_3.png';
+import bannerBlackImage1 from '../assets/images/banners/black/banner_1.png';
+import bannerBlackImage2 from '../assets/images/banners/black/banner_2.png';
+import bannerBlackImage3 from '../assets/images/banners/black/banner_3.png';
+import bannerGreenImage1 from '../assets/images/banners/green/banner_1.png';
+import bannerGreenImage2 from '../assets/images/banners/green/banner_2.png';
+import bannerGreenImage3 from '../assets/images/banners/green/banner_3.png';
 
 import { services, servicesBusiness } from '../utils/servicesData';
 import { products } from '../utils/productsData';
@@ -465,10 +465,10 @@ const HomeView: React.FC = () => {
                     </div>
                 </section>
 
-                <section className="space-y-8 md:space-y-16">
-                    <Carousel slides={1} images={redImages} />
-                    <Carousel slides={1} images={blackImages} />
-                    <Carousel slides={1} images={greenImages} />
+                <section className="space-y-8 md:space-y-16 mb-8 md:mb-16">
+                    <Carousel slidesToShow={1} images={redImages} />
+                    <Carousel slidesToShow={1} images={blackImages} />
+                    <Carousel slidesToShow={1} images={greenImages} />
                 </section>
 
                 <section className="py-12 md:py-12 px-8 md:px-16 -mt-2 bg-lightgreen grid grid-cols-1 md:grid-cols-2 items-center gap-6 md:gap-0">

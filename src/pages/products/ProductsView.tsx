@@ -134,8 +134,8 @@ const ProductsView: React.FC = () => {
                             </button>
                         </div>
                     </div>
-                    <div className="space-y-6 md:space-y-12 order-2 md:order-1 my-8 md:my-8 pt-0 md:pt-8 pr-8 md:pr-0">
-                        <div className="space-y-3 md:space-y-6">
+                    <div className="space-y-6 md:space-y-12 order-2 md:order-1 my-8 md:my-8 pt-0 md:pt-8">
+                        <div className="space-y-3 md:space-y-6 px-4 md:px-0">
                             <h1 className="text-3xl sm:text-4xl md:text-5xl text-black font-medium text-center md:text-start">
                                 Innovación y excelencia en insumos médicos
                             </h1>
@@ -150,7 +150,7 @@ const ProductsView: React.FC = () => {
                             />
                         </div>
                     </div>
-                    <div className="justify-self-center md:justify-self-end relative order-1 md:order-2">
+                    <div className="justify-self-center md:justify-self-end relative order-1 md:order-2 h-auto md:h-full">
                         {!bannerLoaded && (
                             <div className="absolute inset-0 bg-gray-200 animate-pulse flex items-center justify-center">
                                 <svg className="w-8 h-8 md:w-10 md:h-10 lg:w-12 lg:h-12 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -158,22 +158,16 @@ const ProductsView: React.FC = () => {
                                 </svg>
                             </div>
                         )}
-                        <img
-                            ref={bannerRef}
-                            src={productsImage}
-                            alt="Productos médicos"
-                            className={`w-full h-auto max-h-[300px] md:max-h-full ${bannerLoaded ? 'opacity-100' : 'opacity-0'
-                                } transition-opacity duration-300 hidden md:block`}
-                            loading="lazy"
-                        />
-                        <img
-                            ref={bannerRef}
-                            src={productsImageMobile}
-                            alt="Productos médicos"
-                            className={`w-full h-auto max-h-[300px] md:max-h-full ${bannerLoaded ? 'opacity-100' : 'opacity-0'
-                                } transition-opacity duration-300 md:hidden`}
-                            loading="lazy"
-                        />
+                        <picture className="w-full h-auto md:h-full">
+                            <source media="(min-width: 768px)" srcSet={productsImage} />
+                            <img
+                                src={productsImageMobile}
+                                alt="Productos médicos"
+                                loading="lazy"
+                                onLoad={() => setBannerLoaded(true)}
+                                className={`w-full h-auto md:h-full object-cover transition-opacity duration-300 ${bannerLoaded ? 'opacity-100' : 'opacity-0'}`}
+                            />
+                        </picture>
                     </div>
                 </section>
 
