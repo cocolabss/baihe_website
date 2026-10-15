@@ -21,6 +21,7 @@ import anestesiaImage18 from '../assets/images/products/anestesia/anestesia_18.w
 import anestesiaImage19 from '../assets/images/products/anestesia/anestesia_19.webp';
 import anestesiaImage20 from '../assets/images/products/anestesia/anestesia_20.webp';
 import anestesiaImage21 from '../assets/images/products/anestesia/anestesia_21.webp';
+import anestesiaImage22 from '../assets/images/products/anestesia/anestesia_22.webp';
 
 // Purificación de Sangre
 // import purificacionImage from '../assets/images/products/purificacion_sangre.webp';
@@ -131,6 +132,8 @@ export interface ProductItem {
         image: string;
         subtitle?: string;
     }[];
+    catalogPdf?: string;
+    catalogLabel?: string;
 }
 
 export interface ProductCategory {
@@ -170,6 +173,8 @@ export const products: ProductCategory[] = [
                 name: 'Catéter Venoso Central Antimicrobiano',
                 image: anestesiaImage1,
                 description: 'La probabilidad de infección causada por el catéter venoso central ordinario es del 4,5%, el 80% de la infección es causada por bacterias en la superficie de la piel que ingresan a la sangre a través del sitio de punción del catéter. Las bacterias típicas son el estafilococo antitrombina, enterococo y cándida. El catéter venoso central antimicrobiano es eficaz para inhibir el crecimiento de bacterias, especialmente bacterias grampositivas, bacterias gramnegativas y hongos. La siguiente forma indica la tasa antibacteriana de bacterias típicas.\n\nEl tubo está hecho de poliuretano que se mezcla con circonio que contiene plata fosfato a nivel nanométrico, cuando el catéter se coloca en el cuerpo, Ag+ lo hará ser liberado para inhibir el crecimiento de bacterias.\n\nLa probabilidad de infección causada por el catéter venoso central ordinario es del 4,5%, 80% de la infección es causada por bacterias en la superficie de la piel que entran en la sangre a través del sitio de punción del catéter. Las bacterias típicas son el estafilococo antitrombina enterococos y cándida.',
+                catalogPdf: '/catalogs/able-central-venous-catheter-kit.pdf',
+                catalogLabel: 'ABLE Central Venous Catheter Kit',
                 detailImages: [
                     {
                         image: anestesiaImage2,
@@ -195,6 +200,8 @@ export const products: ProductCategory[] = [
                     'La conexión entre el manguito y el tubo principal es lisa y sin un ángulo agudo, las posibilidades de traumatismo en la mucosa se pueden minimizar durante la inserción.',
                     'El tubo está hecho de material termosensible, se volverá suave después de ser insertado en la tráquea sin traumatismo en la tráquea. La dureza y elasticidad del tubo es moderada, por lo tanto, el tubo no es fácil de doblar.'
                 ],
+                catalogPdf: '/catalogs/tubo-endotraqueal.pdf',
+                catalogLabel: 'Disposable Endotracheal Tube',
                 detailImages: [
                     {
                         image: anestesiaImage6,
@@ -286,6 +293,22 @@ export const products: ProductCategory[] = [
                     'El estilete del catéter garantiza una colocación más conveniente y suave.',
                     'Variedad de configuración del kit, alambre guía de nitinol y positivo el conector innecesario de presión está disponible para elegir.'
                 ]
+            },
+            {
+                id: 145,
+                name: 'Máscaras de Anestesia para Respiración Desechables',
+                image: anestesiaImage22,
+                description: 'La máscara respiratoria se utiliza para conectar con equipos respiratorios.',
+                specificationsTitle: 'Características',
+                specifications: [
+                    'Sellado óptimo, cojín de baja presión, suave y confortable.',
+                    'Conexión estándar (22mm/15mm).',
+                    'Fabricada en material transparente 100% libre de látex.',
+                    'Fácil de fijar.',
+                    'Aplicaciones: UCI, Anestesiología, Emergencias, Ginecología.'
+                ],
+                catalogPdf: '/catalogs/mascaras-anestesia-desechables.pdf',
+                catalogLabel: 'Disposable Breathing Anesthesia Masks'
             }
         ]
     },
@@ -306,6 +329,8 @@ export const products: ProductCategory[] = [
                     'Radiopaco: facilita la visualización rápida bajo X-Ray.',
                     'Ala de Sutura Rotativa: Facilita la inspección de la piel, evita la succión de la pared del vaso sanguíneo, minimiza el riesgo de infecciones de salida, no se produjo ninguna torcedura.'
                 ],
+                catalogPdf: '/catalogs/able-haemodialysis-catheter-kit.pdf',
+                catalogLabel: 'ABLE Haemodialysis Catheter Kit',
                 detailImages: [
                     {
                         image: purificacionImage2,
@@ -471,7 +496,9 @@ export const products: ProductCategory[] = [
                     'Válvulas de Extremo de Tubo.',
                     'Material: Policarbonato o Copoliéster.',
                     'Tamaño: ID 2.0mm, 2.5mm, 2.7mm, 2.8mm, 3.7mm, 4.1mm.'
-                ]
+                ],
+                catalogPdf: '/catalogs/extension-adaptadores-sitio-inyeccion.pdf',
+                catalogLabel: 'Extension Tubes with Injection Site Adapters'
             },
             {
                 id: 117,
@@ -484,12 +511,16 @@ export const products: ProductCategory[] = [
                 name: 'Conector Neutral Sin Aguja',
                 image: infusionImage1,
                 description: 'Tecnología libre de agujas Plus El desplazamiento neutro del líquido diseñado ayuda a reducir las oclusiones relacionadas con el reflujo, el desplazamiento bajo y el reflujo sanguíneo.\n\nCuando se conecta a la punta luer de la jeringa, la válvula abre el parche para el fluido que fluye a través de la válvula, luego a través del mandril principal. Al desconectar la jeringa, el mandril retrocede y sella la trayectoria de la válvula, lo que evita que el líquido fluya hacia atrás',
+                catalogPdf: '/catalogs/conector-neutral-sin-aguja-fl-nf01.pdf',
+                catalogLabel: 'FL-NF01 Disposable Injection Site Adapter',
             },
             {
                 id: 119,
                 name: 'Tubo de Extensión con Adaptadores de Sitio de Inyección',
                 image: infusionImage11,
                 description: 'Este dispositivo está diseñado para satisfacer las necesidades de I.V general. Terapia, Anestesia Cardiovascular, UCI&CCU, Recuperación & Oncología. \nMedicamento seguro para infusión IV que incluye la mayoría de los antineoplásicos de alto riesgo o la aspiración de sangre sin riesgo de hemólisis.',
+                catalogPdf: '/catalogs/extension-adaptadores-sitio-inyeccion.pdf',
+                catalogLabel: 'Extension Tubes with Injection Site Adapters',
             },
             {
                 id: 120,
@@ -613,6 +644,8 @@ export const products: ProductCategory[] = [
                     'No se produce cristal de urato ni irritación durante la intubación, por lo que se puede evitar la infección uretral asociada al catéter.',
                     'El catéter foley de silicona es ampliamente aceptado debido a una mejor biocompatibilidad y el período de permanencia puede ser de 30 días, lo que puede reducir el trauma a la uretra causado por la intubación repetida.',
                 ],
+                catalogPdf: '/catalogs/sonda-foley-able.pdf',
+                catalogLabel: 'ABLE Silicone Foley Catheter',
                 detailImages: [
                     {
                         image: infusionImage26,

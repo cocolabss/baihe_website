@@ -1,5 +1,6 @@
 import React from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
+import { Eye, Download } from 'lucide-react';
 
 import MainLayout from '../../components/MainLayout';
 import Button from '../../components/Button';
@@ -85,6 +86,28 @@ const ProductDetailView: React.FC = () => {
                                 </div>
                             )}
                         </div>
+
+                        {product.catalogPdf && (
+                            <div className="flex flex-wrap gap-3 justify-center md:justify-start">
+                                <a
+                                    href={product.catalogPdf}
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    className="inline-flex items-center gap-2 px-6 py-2 rounded-full uppercase text-xs md:text-sm text-white bg-green hover:bg-red transition-colors duration-300 ease-in-out"
+                                >
+                                    <Eye className="w-4 h-4" />
+                                    Ver PDF
+                                </a>
+                                <a
+                                    href={product.catalogPdf}
+                                    download
+                                    className="inline-flex items-center gap-2 px-6 py-2 rounded-full uppercase text-xs md:text-sm text-white bg-red hover:bg-green transition-colors duration-300 ease-in-out"
+                                >
+                                    <Download className="w-4 h-4" />
+                                    Descargar PDF
+                                </a>
+                            </div>
+                        )}
 
                         <div className="space-y-12 md:hidden">
                             {product.image && (
